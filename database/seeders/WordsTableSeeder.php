@@ -87,7 +87,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param);
         $param = [
             'word' => '育児相談',
-            'pronunciation' => 'ikujisoudan'
+            'pronunciation' => 'ikujisoudann'
         ];
         Word::create($param);
         $param = [
@@ -207,7 +207,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param);
         $param = [
             'word' => 'エリクソン',
-            'pronunciation' => 'erikuson'
+            'pronunciation' => 'erikusonn'
         ];
         Word::create($param);
         $param = [
@@ -377,7 +377,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param);
         $param = [
             'word' => '看護師',
-            'pronunciation' => 'kangosi'
+            'pronunciation' => 'kanngosi'
         ];
         Word::create($param);
         $param = [
@@ -486,10 +486,20 @@ class WordsTableSeeder extends Seeder
         ];
         Word::create($param);
         $param = [
+            'word' => '魚鱗癬',
+            'pronunciation' => 'gyorinnsenn'
+        ];
+        Word::create($param);
+        $param = [
             'word' => '緊急一時保育',
             'pronunciation' => 'kinnkyuuitijihoiku'
         ];
         Word::create($param);
+        $param = [
+            'word' => 'キンダーガーテン',
+            'pronunciation' => 'kinnda-ga-tenn'
+        ];
+        Word::create($param); 
         $param = [
             'word' => 'クーイング',
             'pronunciation' => 'ku-inngu'
@@ -757,7 +767,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param);   
         $param = [
             'word' => '児童発達支援管理責任者',
-            'pronunciation' => 'jidouhattatusiennskannrisekininnsya'
+            'pronunciation' => 'jidouhattatusiennkannrisekininnsya'
         ];
         Word::create($param);   
         $param = [
@@ -912,7 +922,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param);  
         $param = [
             'word' => '睡眠',
-            'pronunciation' => 'nonnremusuiminn'
+            'pronunciation' => 'suiminn'
         ];
         Word::create($param); 
         $param = [
@@ -1062,7 +1072,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param);  
         $param = [
             'word' => '地域子育て支援センター',
-            'pronunciation' => 'tiikikosodatesiennsenta-'
+            'pronunciation' => 'tiikikosodatesiennsennta-'
         ];
         Word::create($param);  
         $param = [
@@ -1173,6 +1183,11 @@ class WordsTableSeeder extends Seeder
         $param = [
             'word' => 'とびひ',
             'pronunciation' => 'tobihi'
+        ];
+        Word::create($param); 
+        $param = [
+            'word' => 'ナーサリー',
+            'pronunciation' => 'na-sari-'
         ];
         Word::create($param); 
         $param = [
@@ -1452,7 +1467,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param); 
         $param = [
             'word' => 'ファミリーサポート',
-            'pronunciation' => 'famiri-sapo-ro'
+            'pronunciation' => 'famiri-sapo-to'
         ];
         Word::create($param); 
         $param = [
@@ -1500,6 +1515,12 @@ class WordsTableSeeder extends Seeder
             'pronunciation' => 'pu-runetu'
         ];
         Word::create($param); 
+        $param = [
+            'word' => 'フレーベル',
+            'pronunciation' => 'fure-beru'
+        ];
+        Word::create($param); 
+
         $param = [
             'word' => 'プログラミング教育',
             'pronunciation' => 'puroguraminngukyouiku'
@@ -1617,7 +1638,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param); 
         $param = [
             'word' => 'ボディイメージ',
-            'pronunciation' => 'bodhi-me-ji'
+            'pronunciation' => 'bodhiime-ji'
         ];
         Word::create($param); 
         $param = [
@@ -1727,7 +1748,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param); 
         $param = [
             'word' => '目と手の協応',
-            'pronunciation' => 'metotenokyouou'
+            'pronunciation' => 'metotennnokyouou'
         ];
         Word::create($param); 
         $param = [
@@ -1947,22 +1968,17 @@ class WordsTableSeeder extends Seeder
         Word::create($param); 
         $param = [
             'word' => 'AED',
-            'pronunciation' => 'aed'
+            'pronunciation' => 'AED'
         ];
         Word::create($param); 
         $param = [
             'word' => 'BCG',
-            'pronunciation' => 'bcg'
+            'pronunciation' => 'BCG'
         ];
         Word::create($param); 
         $param = [
             'word' => 'Hibワクチン',
-            'pronunciation' => 'hibwakutinn'
-        ];
-        Word::create($param); 
-        $param = [
-            'word' => 'ICT',
-            'pronunciation' => 'ICT'
+            'pronunciation' => 'Hibwakutinn'
         ];
         Word::create($param); 
         $param = [

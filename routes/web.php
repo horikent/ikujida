@@ -15,7 +15,11 @@ use App\Http\Controllers\WordController;
 |
 */
 Route::get('/', [WordController::class, 'index']);
-
+Route::get('/admin', [WordController::class, 'admin']);
+Route::post('/add', [WordController::class, 'create']);
+Route::post('/edit', [WordController::class, 'update']);
+Route::post('/delete', [WordController::class, 'remove']);
+Route::post('/search', [WordController::class, 'search']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
