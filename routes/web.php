@@ -15,6 +15,7 @@ use App\Http\Controllers\WordController;
 |
 */
 Route::get('/', [WordController::class, 'index']);
+Route::get('/typing', [WordController::class, 'typing']);
 Route::get('/admin', [WordController::class, 'admin']);
 Route::post('/add', [WordController::class, 'create']);
 Route::post('/edit', [WordController::class, 'update']);

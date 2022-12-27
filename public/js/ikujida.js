@@ -1,170 +1,146 @@
-
-const typeDisplay = document.getElementById("typeDisplay");
-const typeInput = document.getElementById("typeInput");
-const timer = document.getElementById("timer");
-
-const typeSound = new Audio("/audio/typing-sound.mp3");
-const wrongSound = new Audio("/audio/wrong.mp3");
-const correctSound = new Audio("/audio/correct.mp3");
-
-
-// function setWord(){
-//   typeDisplay.textContent = word;
-//   loc = 0;
-// }
-
-// let word;
-// let loc = 0;
-// let score = 0;
-// let miss = 0;
-// let startTime;
-// let isPlaying = false;
-
-// const scoreLabel = document.getElementById('score');
-// const missLabel = document.getElementById('miss');
-
-// document.addEventListener('click', ()=>{
-//   if(isPlaying === true){
-//     return;
-//   }
-//   isPlaying = true;
-//   startTime = Date.now();
-//   setWord();
-// });
-
-// document.addEventListener('input', e => {
-//   typeSound.play();
-//   typeSound.currentTime = 0;
-//   const arrayValue = typeInput.value.split("");
-//   if(arrayValue[loc] !== word[loc]){
-//     miss++; // ミス数プラス1
-//     missLabel.textContent = miss; // ミス数を表示
-//     word.classList.add("incorrect");
-//     word.classList.remove("correct");
-//     wrongSound.volume = 0.3;
-//     wrongSound.play();
-//     wrongSound.currentTime = 0;
-//     return;
-//   }
-
-//   loc++;
-//   score++; // 正解数プラス1
-//   scoreLabel.textContent = score; 
-
-
-//   if(loc === word.length){
-//     if (words.length === 0){
-//       const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
-//       const result = document.getElementById('result');
-//       result.textContent = `Finished! ${elapsedTime} seconds!`;
-//       return;
-
-//     }
-//     setWord();
-//   }
-// }); 
-
-// function result() {
-//   const accuracy = score + miss === 0 ? 0 : score / (score + miss) * 100; // 正解率計算
-//   alert(`${score} letters, ${miss} misses, ${accuracy.toFixed(2)}% accuracy!`); // 正解率表示
-// }
-
-// inputテキスト入力。合っているかどうかの判定。
-
-
+// 変数の初期化
+let untyped = '';
+let typed = '';
 let score = 0;
-let miss = 0;
-const scoreLabel = document.getElementById('score');
-const missLabel = document.getElementById('miss');
 
-typeInput.addEventListener("input", () =>{
-  // タイプ音をつける
-  typeSound.play();
-  typeSound.currentTime = 0;
-  const sentenceArray = typeDisplay.querySelectorAll("span");
-  const arrayValue = typeInput.value.split("");
-  let correct = true;
-  sentenceArray.forEach((characterSpan, index) => {
-      if((arrayValue[index] == null)){
-        characterSpan.classList.remove("correct");
-        characterSpan.classList.remove("incorrect");
-        correct = false;
-      } else if (characterSpan.innerText == arrayValue[index]){
-        characterSpan.classList.add("correct");
-        characterSpan.classList.remove("incorrect");
-        score++; // 正解数プラス1
-        scoreLabel.textContent = score; 
-      } else {
-        characterSpan.classList.add("incorrect");
-        characterSpan.classList.remove("correct");
-        wrongSound.volume = 0.3;
-        wrongSound.play();
-        wrongSound.currentTime = 0;
-        miss++; 
-        missLabel.textContent = miss; 
-        correct = false;
-      }
-  });
+// 必要なHTML要素の取得
+const typedfield = document.getElementById('typed');
+const untypedfield = document.getElementById('untyped');
+const wrap = document.getElementById('wrap');
+const start = document.getElementById('start');
+const count = document.getElementById('count');
+
+// 複数のテキストを格納する配列
+// const textList = [
+//   'Hello World','This is my App','How are you?',
+//   'Today is sunny','I love JavaScript!','Good morning',
+//   'I am Japanese','Let it be','Samurai',
+//   'Typing Game','Information Technology',
+//   'I want to be a programmer','What day is today?',
+//   'I want to build a web app','Nice to meet you',
+//   'Chrome Firefox Edge Safari','machine learning',
+//   'Brendan Eich','John Resig','React Vue Angular',
+//   'Netscape Communications','undefined null NaN',
+//   'Thank you very much','Google Apple Facebook Amazon',
+//   'ECMAScript','console.log','for while if switch',
+//   'var let const','Windows Mac Linux iOS Android',
+//   'programming'
+// ];
+
+// ランダムなテキストを表示
+const createText = () => {
+
+  // 正タイプした文字列をクリア
+  typed='';
+  typedfield.textContent = typed;
+  
+  // // 配列のインデックス数からランダムな数値を生成する
+  //   let random = Math.floor(Math.random() * textList.length);
+  
+  // 配列からランダムにテキストを取得し画面に表示する
+  // untyped = textList;
+  untyped = untypedfield;
+  console.log(typeof untyped);
+};
 
 
-  if(correct === true) {
-    correctSound.play();
-    correctSound.currentTime = 0;
+// キー入力の判定
+const keyPress = e => {
+
+  // 誤タイプの場合
+  if(e.key !== untyped.substring(0,1)){
+    wrap.classList.add('mistyped');
+    //  100ms後に背景色を元に戻す
     setTimeout(() => {
-    window.location.reload();
-    }, 340);
+      wrap.classList.remove('mistyped');
+    }, 100);
+    return;
   }
+
+  // 正タイプの場合
+    // スコアのインクリメント
+    score++; 
+  typed += untyped.substring(0,1);
+  untyped = untyped.substring(1);
+  typedfield.textContent = typed;
+  untypedfield.textContent = untyped;
+
+// テキストがなくなったら新しいテキストを表示
+  if(untyped === ''){
+    createText();
+  }
+  
+};
+
+
+// タイピングスキルのランクを判定
+const rankCheck = score => {
+
+  // テキストを格納する変数を作る
+  let text = '';
+
+  // スコアに応じて異なるメッセージを変数textに格納する
+  if(score < 100){
+    text = `あなたのランクはCです。 \nBランクまであと${100 - score}文字です。`;
+  } else if(score < 200){
+    text = `あなたのランクはBです。 \nAランクまであと${200 - score}文字です。`;
+  } else if(score < 300){
+    text = `あなたのランクはAです。 \nSランクまであと${300 - score}文字です。`;
+  } else if(score >= 300) {
+    text = `あなたのランクはSです。\nおめでとうございます!`;   
+  }
+  
+  // 生成したメッセージと一緒に文字列を返す
+  return `${score}文字打てました!\n${text}\n【OK】リトライ / 【キャンセル】終了`;
+};
+
+// ゲームを終了
+const gameOver = id => {
+  clearInterval(id);
+
+  const result = confirm(rankCheck(score));
+
+  // OKボタンをクリックされたらリロードする
+  if(result == true){
+    window.location.reload();
+  }
+};
+
+
+// カウントダウンタイマー
+const timer = () => {
+
+  // タイマー部分のHTML要素(p要素)を取得する
+  let time = count.textContent;
+
+  const id = setInterval(() => {
+
+    // カウントダウンする
+    time--;
+    count.textContent = time;
+
+    // カウントが0になったらタイマーを停止する
+    if(time <= 0){
+      gameOver(id);
+    }
+  }, 1000);
+};
+
+// ゲームスタート時の処理
+document.addEventListener('DOMContentLoaded', () => {
+
+  // カウントダウンタイマーを開始する
+  timer();
+
+  // ランダムなテキストを表示する
+  createText();
+
+  // 「スタート」ボタンを非表示にする
+  // start.style.display = 'none';
+
+  // キーボードのイベント処理
+  document.addEventListener('keypress', keyPress);
 });
 
+// untypedfield.textContent = 'スタートボタンで開始';
 
-  let text = typeDisplay.textContent;
-  //splitで<span>に区切る
-  let result = text.split('');
-  let newText = '';
-
-  for(let i = 0; i < result.length; i++){
-      newText += '<span>' + result[i] + '</span>';
-    }
-
-  //newTextを書き換える
-  typeDisplay.innerHTML = newText;
-  /* テキストボックスの中身を消す。 */
-  typeInput.value = "";
-
-  
-let startTime;
-let originTime = 20;
-     /* タイマーのリセット */
-StartTimer();
-function StartTimer(){
-  timer.innerText = originTime;
-  startTime = new Date();
-  console.log(startTime);
-  setInterval(() => {
-    timer.innerText = originTime - getTimerTime();
-    if(timer.innerText <= 0) TimeUP();
-  }, 1000);
-}
-
-
-function getTimerTime(){
-  return Math.floor(
-    (new Date() - startTime) / 1000);
-}
-
-function TimeUP(){
-  correct = false;
-  wrongSound.volume = 0.3;
-  wrongSound.play();
-  wrongSound.currentTime = 0;
-  setTimeout(() => {
-  window.location.reload();
-  }, 450);
-}
-
-
-document.getElementById('muteBtn').onclick = function(){
-  document.getElementById('typeSound').muted = true
-  document.getElementById('correctSound').muted = true
-  document.getElementById('wrongSound').muted = true
-}

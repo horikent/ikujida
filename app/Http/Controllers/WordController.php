@@ -8,11 +8,16 @@ class WordController extends Controller
 {
     public function index(Request $request)
     {
+    return view('/index');
+    }
+
+    public function typing(Request $request)
+    {
     $words=Word::inRandomOrder()->first();
     $param=[
         'words'=>$words
     ];
-    return view('/index', $param);
+    return view('/typing', $param);
     }
 
 

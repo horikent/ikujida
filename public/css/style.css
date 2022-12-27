@@ -1,15 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Zen+Antique&display=swap");
+/* index */
 
-*{
-  box-sizing: border-box;
+.index__container{
+  font-size: 5em;
+  margin-top:30%;
 }
+.start{
+  text-decoration: none;
+  font-family:'Courier New', monospace;
+  color:cadetblue;
+  cursor: pointer;
+}
+
 body{
+  text-align: center;
+}
+
+.typing__container{
+  font-size:5em;
+}
+
+
+.count{
+  margin:0;
+  font-weight: bold;
+  color:#888;
+}
+
+.wrap{
+  margin-top:20px;
+  padding:40px 40px;
+  font-weight: bold;
+  background-color:#666;
+  color:#fff;
+  font-family:'Courier New', monospace;
+}
+
+.typed{
+  color:lightgreen;
+}
+
+.mistyped{
+  background-color:red;
+}
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Zen+Antique&display=swap"); */
+
+/* *{
+  box-sizing: border-box;
+} */
+/* body{
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: url("img/p0528.jpg"); */
-  /* background: url("../../../public/img/p0528.png") no-repeat */
   background: rgb(2, 205, 16);
   font-family: "Poppins", sans-serif;
 }
@@ -84,10 +128,11 @@ body{
   font-size:14px;
   font-weight: lighter;
   text-align: center;
-}
+} */
 
 /* admin */
 .container{
+  height: 100vh;
   text-align: center;
   justify-content: center;
 }

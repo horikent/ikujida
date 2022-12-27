@@ -9,9 +9,14 @@
   <title>育児打</title>
 </head>
 <body>
-  <div class="index__container">
-    <a href="/typing" class="start" id="start">Click to Start</a>
+  <div class="typing__container">
+    <p id="count" class="count">60</p>
+    <div id="wrap" class="wrap">
+      <p>{{$words->word}}</p>
+      <span id="typed" class="typed"></span><span id="untyped" class="untyped">{{$words->pronunciation}}</span>
+    </div>
+      <script src="/js/ikujida.js"></script>
+    </div>
   </div>
-  <script src="/js/ikujida.js"></script>
 </body>
 </html>
