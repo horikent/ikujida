@@ -39,7 +39,7 @@ const createText = () => {
   
   // 配列からランダムにテキストを取得し画面に表示する
   // untyped = textList;
-  untyped = untypedfield;
+  untyped = untypedfield.innerHTML;
   console.log(typeof untyped);
 };
 
@@ -67,7 +67,7 @@ const keyPress = e => {
 
 // テキストがなくなったら新しいテキストを表示
   if(untyped === ''){
-    createText();
+    window.location.reload();
   }
   
 };

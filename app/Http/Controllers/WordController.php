@@ -41,6 +41,7 @@ class WordController extends Controller
         return view('/admin', $param);
     }
 
+
     public function admin(Request $request)
     {
     return view('/admin');
@@ -58,6 +59,7 @@ class WordController extends Controller
         return redirect('/admin')->with('message', '用語を追加しました');
     }
     
+
     public function update(Request $request)
     {
         $word=$request->word;
@@ -72,6 +74,7 @@ class WordController extends Controller
         Word::where('id', $request->id)->update($param);
         return redirect('/admin')->with('message', '変更を保存しました');
     }
+    
     
     public function remove(Request $request)
     {
