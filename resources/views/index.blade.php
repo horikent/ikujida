@@ -12,6 +12,6 @@
   <div class="index__container">
     <a href="/typing" class="start" id="start">Click to Start</a>
   </div>
-  <script src="/js/ikujida.js"></script>
+  <script src="/js/typing.js"></script>
 </body>
 </html>

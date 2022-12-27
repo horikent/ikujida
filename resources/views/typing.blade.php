@@ -15,7 +15,7 @@
       <p>{{$words->word}}</p>
       <span id="typed" class="typed"></span><span id="untyped" class="untyped">{{$words->pronunciation}}</span>
     </div>
-      <script src="/js/ikujida.js"></script>
+      <script src="/js/typing.js"></script>
     </div>
   </div>
 </body>

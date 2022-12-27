@@ -74,6 +74,6 @@
       </table> 
     </div>
   </div>  
-  <script src="/js/ikujida.js"></script>
+  <script src="/js/typing.js"></script>
 </body>
 </html>
