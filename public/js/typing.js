@@ -10,6 +10,10 @@ const wrap = document.getElementById('wrap');
 const start = document.getElementById('start');
 const count = document.getElementById('count');
 
+const typeSound = new Audio("./audio/typing-sound.mp3");
+const wrongSound = new Audio("./audio/wrong.mp3");
+const correctSound = new Audio("./audio/correct.mp3");
+
 // 複数のテキストを格納する配列
 // const textList = [
 //   'Hello World','This is my App','How are you?',
@@ -40,13 +44,14 @@ const createText = () => {
   // 配列からランダムにテキストを取得し画面に表示する
   // untyped = textList;
   untyped = untypedfield.innerHTML;
-  console.log(typeof untyped);
 };
 
 
 // キー入力の判定
 const keyPress = e => {
-
+  typeSound.play();
+  typeSound.currentTime = 0;
+  
   // 誤タイプの場合
   if(e.key !== untyped.substring(0,1)){
     wrap.classList.add('mistyped');
@@ -54,6 +59,9 @@ const keyPress = e => {
     setTimeout(() => {
       wrap.classList.remove('mistyped');
     }, 100);
+    wrongSound.volume = 0.3;
+    wrongSound.play();
+    wrongSound.currentTime = 0;
     return;
   }
 
@@ -67,6 +75,9 @@ const keyPress = e => {
 
 // テキストがなくなったら新しいテキストを表示
   if(untyped === ''){
+    correctSound.play();
+    correctSound.currentTime = 0;
+    RenderNextSentence();
     window.location.reload();
   }
   
