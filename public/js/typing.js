@@ -77,9 +77,9 @@ const keyPress = (e) => {
       // Ajaxを使う方法
       // XMLHttpRequestを使ってAjaxで更新
 
-    let url ="http://127.0.0.1:8000/typing";
+    let url ='/typing';
 
-    function ajaxUpdate(url, element) {
+    function ajaxUpdate(url, wrap) {
     
       // urlを加工し、キャッシュされないurlにする。
       url = url + '?ver=' + new Date().getTime();
