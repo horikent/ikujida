@@ -13,6 +13,6 @@ class Word extends Model
         'id'
     ];
     protected $fillable =[
-        'word', 'pronunciation', 'created_at', 'updated_at', 'shop_id', 'user_id'
+        'word', 'letter', 'created_at', 'updated_at', 'shop_id', 'user_id'
     ];
 }

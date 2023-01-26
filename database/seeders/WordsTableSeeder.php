@@ -17,1983 +17,1983 @@ class WordsTableSeeder extends Seeder
     {
         $param = [
             'word' => '愛着',
-            'pronunciation' => 'aityaku'
+            'letter' => 'aityaku'
         ];
         Word::create($param);
         $param = [
             'word' => '赤ちゃん返り',
-            'pronunciation' => 'akatyanngaeri'
+            'letter' => 'akatyanngaeri'
         ];
         Word::create($param);
         $param = [
             'word' => '預かり保育',
-            'pronunciation' => 'azukarihoiku'
+            'letter' => 'azukarihoiku'
         ];
         Word::create($param);
         $param = [
             'word' => 'アスペルガー症候群',
-            'pronunciation' => 'asuperuga-syoukougunn'
+            'letter' => 'asuperuga-syoukougunn'
         ];
         Word::create($param);
         $param = [
             'word' => 'あせも',
-            'pronunciation' => 'asemo'
+            'letter' => 'asemo'
         ];
         Word::create($param);
         $param = [
             'word' => '遊び食べ',
-            'pronunciation' => 'asobitabe'
+            'letter' => 'asobitabe'
         ];
         Word::create($param);
         $param = [
             'word' => 'アデノウィルス',
-            'pronunciation' => 'adenoulirusu'
+            'letter' => 'adenoulirusu'
         ];
         Word::create($param);
         $param = [
             'word' => '後追い',
-            'pronunciation' => 'atooi'
+            'letter' => 'atooi'
         ];
         Word::create($param);
         $param = [
             'word' => 'アトピー',
-            'pronunciation' => 'atopi-'
+            'letter' => 'atopi-'
         ];
         Word::create($param);
         $param = [
             'word' => 'アナフィラキシーショック',
-            'pronunciation' => 'anafirakisi-syokku'
+            'letter' => 'anafirakisi-syokku'
         ];
         Word::create($param);
         $param = [
             'word' => 'アレルギー除去食',
-            'pronunciation' => 'arerugi-jokyosyoku'
+            'letter' => 'arerugi-jokyosyoku'
         ];
         Word::create($param);
         $param = [
             'word' => '安心',
-            'pronunciation' => 'annsinn'
+            'letter' => 'annsinn'
         ];
         Word::create($param);
         $param = [
             'word' => 'いかのおすし',
-            'pronunciation' => 'ikanoosusi'
+            'letter' => 'ikanoosusi'
         ];
         Word::create($param);
         $param = [
             'word' => '生きる力',
-            'pronunciation' => 'ikirutikara'
+            'letter' => 'ikirutikara'
         ];
         Word::create($param);
         $param = [
             'word' => '育児相談',
-            'pronunciation' => 'ikujisoudann'
+            'letter' => 'ikujisoudann'
         ];
         Word::create($param);
         $param = [
             'word' => '育児不安',
-            'pronunciation' => 'ikujifuann'
+            'letter' => 'ikujifuann'
         ];
         Word::create($param);
         $param = [
             'word' => '一語文',
-            'pronunciation' => 'itigobunn'
+            'letter' => 'itigobunn'
         ];
         Word::create($param);
         $param = [
             'word' => '１ヶ月検診',
-            'pronunciation' => 'ikkagetukennsinn'
+            'letter' => 'ikkagetukennsinn'
         ];
         Word::create($param);
         $param = [
             'word' => '１歳半検診',
-            'pronunciation' => 'issaihannkennsinn'
+            'letter' => 'issaihannkennsinn'
         ];
         Word::create($param);
         $param = [
             'word' => '一斉保育',
-            'pronunciation' => 'isseihoiku'
+            'letter' => 'isseihoiku'
         ];
         Word::create($param);
         $param = [
             'word' => '異年齢保育',
-            'pronunciation' => 'inennreihoiku'
+            'letter' => 'inennreihoiku'
         ];
         Word::create($param);
         $param = [
             'word' => '一時保育',
-            'pronunciation' => 'itijihoiku'
+            'letter' => 'itijihoiku'
         ];
         Word::create($param);
         $param = [
             'word' => '溢乳',
-            'pronunciation' => 'itunyuu'
+            'letter' => 'itunyuu'
         ];
         Word::create($param);
         $param = [
             'word' => 'いないいないばあ',
-            'pronunciation' => 'inaiinaibaa'
+            'letter' => 'inaiinaibaa'
         ];
         Word::create($param);
         $param = [
             'word' => 'イヤイヤ期',
-            'pronunciation' => 'iyaiyaki'
+            'letter' => 'iyaiyaki'
         ];
         Word::create($param);
         $param = [
             'word' => 'インクルージョン保育',
-            'pronunciation' => 'innkuru-jonnhoiku'
+            'letter' => 'innkuru-jonnhoiku'
         ];
         Word::create($param);
         $param = [
             'word' => 'インフルエンザ',
-            'pronunciation' => 'innfuruennza'
+            'letter' => 'innfuruennza'
         ];
         Word::create($param);
         $param = [
             'word' => 'ヴィゴツキー',
-            'pronunciation' => 'vigotuki-'
+            'letter' => 'vigotuki-'
         ];
         Word::create($param);
         $param = [
             'word' => '内祝い',
-            'pronunciation' => 'utiiwai'
+            'letter' => 'utiiwai'
         ];
         Word::create($param);
         $param = [
             'word' => 'うつぶせ寝',
-            'pronunciation' => 'utubusene'
+            'letter' => 'utubusene'
         ];
         Word::create($param);
         $param = [
             'word' => '産毛',
-            'pronunciation' => 'ubuge'
+            'letter' => 'ubuge'
         ];
         Word::create($param);
         $param = [
             'word' => '産声',
-            'pronunciation' => 'ubugoe'
+            'letter' => 'ubugoe'
         ];
         Word::create($param);
         $param = [
             'word' => 'うんち',
-            'pronunciation' => 'unnti'
+            'letter' => 'unnti'
         ];
         Word::create($param);
         $param = [
             'word' => '英語教育',
-            'pronunciation' => 'eigokyouiku'
+            'letter' => 'eigokyouiku'
         ];
         Word::create($param);
         $param = [
             'word' => '栄養士',
-            'pronunciation' => 'eiyousi'
+            'letter' => 'eiyousi'
         ];
         Word::create($param);
         $param = [
             'word' => 'エピソード記述',
-            'pronunciation' => 'episo-dokijutu'
+            'letter' => 'episo-dokijutu'
         ];
         Word::create($param);
         $param = [
             'word' => 'エピペン',
-            'pronunciation' => 'epipenn'
+            'letter' => 'epipenn'
         ];
         Word::create($param);
         $param = [
             'word' => '絵本',
-            'pronunciation' => 'ehonn'
+            'letter' => 'ehonn'
         ];
         Word::create($param);
         $param = [
             'word' => 'エリクソン',
-            'pronunciation' => 'erikusonn'
+            'letter' => 'erikusonn'
         ];
         Word::create($param);
         $param = [
             'word' => '園児',
-            'pronunciation' => 'ennji'
+            'letter' => 'ennji'
         ];
         Word::create($param);
         $param = [
             'word' => '延長保育',
-            'pronunciation' => 'enntyouhoiku'
+            'letter' => 'enntyouhoiku'
         ];
         Word::create($param);
         $param = [
             'word' => '園だより',
-            'pronunciation' => 'enndayori'
+            'letter' => 'enndayori'
         ];
         Word::create($param);
         $param = [
             'word' => '黄疸',
-            'pronunciation' => 'oudann'
+            'letter' => 'oudann'
         ];
         Word::create($param);
         $param = [
             'word' => 'おかしもち',
-            'pronunciation' => 'okasimoti'
+            'letter' => 'okasimoti'
         ];
         Word::create($param);
         $param = [
             'word' => 'お片付け',
-            'pronunciation' => 'okataduke'
+            'letter' => 'okataduke'
         ];
         Word::create($param);
         $param = [
             'word' => 'お着替え',
-            'pronunciation' => 'okigae'
+            'letter' => 'okigae'
         ];
         Word::create($param);
         $param = [
             'word' => 'お食い初め',
-            'pronunciation' => 'okuizome'
+            'letter' => 'okuizome'
         ];
         Word::create($param);
         $param = [
             'word' => 'おしゃぶり',
-            'pronunciation' => 'osyaburi'
+            'letter' => 'osyaburi'
         ];
         Word::create($param);
         $param = [
             'word' => 'おしりふき',
-            'pronunciation' => 'osirifuki'
+            'letter' => 'osirifuki'
         ];
         Word::create($param);
         $param = [
             'word' => 'おすわり',
-            'pronunciation' => 'osuwari'
+            'letter' => 'osuwari'
         ];
         Word::create($param);
         $param = [
             'word' => 'おたふくかぜ',
-            'pronunciation' => 'otafukukaze'
+            'letter' => 'otafukukaze'
         ];
         Word::create($param);
         $param = [
             'word' => 'おねしょ',
-            'pronunciation' => 'onesyo'
+            'letter' => 'onesyo'
         ];
         Word::create($param);
         $param = [
             'word' => 'オペレッタ',
-            'pronunciation' => 'operetta'
+            'letter' => 'operetta'
         ];
         Word::create($param);
         $param = [
             'word' => 'おまる',
-            'pronunciation' => 'omaru'
+            'letter' => 'omaru'
         ];
         Word::create($param);
         $param = [
             'word' => 'お宮参り',
-            'pronunciation' => 'omiyamairi'
+            'letter' => 'omiyamairi'
         ];
         Word::create($param);
         $param = [
             'word' => 'お迎え',
-            'pronunciation' => 'omukae'
+            'letter' => 'omukae'
         ];
         Word::create($param);
         $param = [
             'word' => 'おむつかぶれ',
-            'pronunciation' => 'omutukabure'
+            'letter' => 'omutukabure'
         ];
         Word::create($param);
         $param = [
             'word' => 'おむつはずれ',
-            'pronunciation' => 'omutuhazure'
+            'letter' => 'omutuhazure'
         ];
         Word::create($param);
         $param = [
             'word' => 'おやつ',
-            'pronunciation' => 'oyatu'
+            'letter' => 'oyatu'
         ];
         Word::create($param);
         $param = [
             'word' => 'おんぶ',
-            'pronunciation' => 'onnbu'
+            'letter' => 'onnbu'
         ];
         Word::create($param);
         $param = [
             'word' => '外気浴',
-            'pronunciation' => 'gaikiyoku'
+            'letter' => 'gaikiyoku'
         ];
         Word::create($param);
         $param = [
             'word' => 'かかりつけ医',
-            'pronunciation' => 'kakaritukei'
+            'letter' => 'kakaritukei'
         ];
         Word::create($param);
         $param = [
             'word' => '学習',
-            'pronunciation' => 'gakusyuu'
+            'letter' => 'gakusyuu'
         ];
         Word::create($param);
         $param = [
             'word' => '学習障害',
-            'pronunciation' => 'gakusyuusyougai'
+            'letter' => 'gakusyuusyougai'
         ];
         Word::create($param);
         $param = [
             'word' => '学童保育',
-            'pronunciation' => 'gakudouhoiku'
+            'letter' => 'gakudouhoiku'
         ];
         Word::create($param);
         $param = [
             'word' => '片付け',
-            'pronunciation' => 'kataduke'
+            'letter' => 'kataduke'
         ];
         Word::create($param);
         $param = [
             'word' => '家庭教育',
-            'pronunciation' => 'kateikyouiku'
+            'letter' => 'kateikyouiku'
         ];
         Word::create($param);
         $param = [
             'word' => '家庭的保育',
-            'pronunciation' => 'kateitekihoiku'
+            'letter' => 'kateitekihoiku'
         ];
         Word::create($param);
         $param = [
             'word' => '噛みつき',
-            'pronunciation' => 'kamituki'
+            'letter' => 'kamituki'
         ];
         Word::create($param);
         $param = [
             'word' => 'カリキュラム',
-            'pronunciation' => 'karikyuramu'
+            'letter' => 'karikyuramu'
         ];
         Word::create($param);
         $param = [
             'word' => '川崎病',
-            'pronunciation' => 'kawasakibyou'
+            'letter' => 'kawasakibyou'
         ];
         Word::create($param);
         $param = [
             'word' => '環境構成',
-            'pronunciation' => 'kannkyoukousei'
+            'letter' => 'kannkyoukousei'
         ];
         Word::create($param);
         $param = [
             'word' => '看護師',
-            'pronunciation' => 'kanngosi'
+            'letter' => 'kanngosi'
         ];
         Word::create($param);
         $param = [
             'word' => '感覚過敏',
-            'pronunciation' => 'kannkakukabinn'
+            'letter' => 'kannkakukabinn'
         ];
         Word::create($param);
         $param = [
             'word' => '感覚統合',
-            'pronunciation' => 'kannkakutougou'
+            'letter' => 'kannkakutougou'
         ];
         Word::create($param);
         $param = [
             'word' => '感覚鈍麻',
-            'pronunciation' => 'kannkakudonnma'
+            'letter' => 'kannkakudonnma'
         ];
         Word::create($param);
         $param = [
             'word' => 'カンガルーケア',
-            'pronunciation' => 'kanngaru-kea'
+            'letter' => 'kanngaru-kea'
         ];
         Word::create($param);
         $param = [
             'word' => '癇癪',
-            'pronunciation' => 'kannsyaku'
+            'letter' => 'kannsyaku'
         ];
         Word::create($param);
         $param = [
             'word' => '関心',
-            'pronunciation' => 'kannsinn'
+            'letter' => 'kannsinn'
         ];
         Word::create($param);
         $param = [
             'word' => '感染症',
-            'pronunciation' => 'kannsennsyou'
+            'letter' => 'kannsennsyou'
         ];
         Word::create($param);
         $param = [
             'word' => '疳の虫',
-            'pronunciation' => 'kannnomusi'
+            'letter' => 'kannnomusi'
         ];
         Word::create($param);
         $param = [
             'word' => '危機管理',
-            'pronunciation' => 'kikikannri'
+            'letter' => 'kikikannri'
         ];
         Word::create($param);
         $param = [
             'word' => '利き手の確立',
-            'pronunciation' => 'kikitenokakuritu'
+            'letter' => 'kikitenokakuritu'
         ];
         Word::create($param);
         $param = [
             'word' => '吃音',
-            'pronunciation' => 'kituonn'
+            'letter' => 'kituonn'
         ];
         Word::create($param);
         $param = [
             'word' => 'ギフテッド',
-            'pronunciation' => 'gifuteddo'
+            'letter' => 'gifuteddo'
         ];
         Word::create($param);
         $param = [
             'word' => '基本的生活習慣',
-            'pronunciation' => 'kihonntekiseikatusyuukann'
+            'letter' => 'kihonntekiseikatusyuukann'
         ];
         Word::create($param);
         $param = [
             'word' => '教育',
-            'pronunciation' => 'kyouiku'
+            'letter' => 'kyouiku'
         ];
         Word::create($param);
         $param = [
             'word' => '教育課程',
-            'pronunciation' => 'kyouikukatei'
+            'letter' => 'kyouikukatei'
         ];
         Word::create($param);
         $param = [
             'word' => '胸骨圧迫',
-            'pronunciation' => 'kyoukotuappaku'
+            'letter' => 'kyoukotuappaku'
         ];
         Word::create($param);
         $param = [
             'word' => '行事',
-            'pronunciation' => 'gyouji'
+            'letter' => 'gyouji'
         ];
         Word::create($param);
         $param = [
             'word' => '興味',
-            'pronunciation' => 'kyoumi'
+            'letter' => 'kyoumi'
         ];
         Word::create($param);
         $param = [
             'word' => '救急箱',
-            'pronunciation' => 'kyuukyuubako'
+            'letter' => 'kyuukyuubako'
         ];
         Word::create($param);
         $param = [
             'word' => '吸啜反射',
-            'pronunciation' => 'kyuutetuhannsya'
+            'letter' => 'kyuutetuhannsya'
         ];
         Word::create($param);
         $param = [
             'word' => '驚愕反射',
-            'pronunciation' => 'kyougakuhannsya'
+            'letter' => 'kyougakuhannsya'
         ];
         Word::create($param);
         $param = [
             'word' => '魚鱗癬',
-            'pronunciation' => 'gyorinnsenn'
+            'letter' => 'gyorinnsenn'
         ];
         Word::create($param);
         $param = [
             'word' => '緊急一時保育',
-            'pronunciation' => 'kinnkyuuitijihoiku'
+            'letter' => 'kinnkyuuitijihoiku'
         ];
         Word::create($param);
         $param = [
             'word' => 'キンダーガーテン',
-            'pronunciation' => 'kinnda-ga-tenn'
+            'letter' => 'kinnda-ga-tenn'
         ];
         Word::create($param); 
         $param = [
             'word' => 'クーイング',
-            'pronunciation' => 'ku-inngu'
+            'letter' => 'ku-inngu'
         ];
         Word::create($param);
         $param = [
             'word' => '首すわり',
-            'pronunciation' => 'kubisuwari'
+            'letter' => 'kubisuwari'
         ];
         Word::create($param);
         $param = [
             'word' => 'クレーン現象',
-            'pronunciation' => 'kure-nngennsyou'
+            'letter' => 'kure-nngennsyou'
         ];
         Word::create($param);        
         $param = [
             'word' => '劇遊び',
-            'pronunciation' => 'gekiasobi'
+            'letter' => 'gekiasobi'
         ];
         Word::create($param);
         $param = [
             'word' => '経口感染',
-            'pronunciation' => 'keikoukansenn'
+            'letter' => 'keikoukansenn'
         ];
         Word::create($param);
         $param = [
             'word' => '経口補水液',
-            'pronunciation' => 'keikouhosuieki'
+            'letter' => 'keikouhosuieki'
         ];
         Word::create($param);
         $param = [
             'word' => 'げっぷ',
-            'pronunciation' => 'geppu'
+            'letter' => 'geppu'
         ];
         Word::create($param);
         $param = [
             'word' => '検温',
-            'pronunciation' => 'kennonn'
+            'letter' => 'kennonn'
         ];
         Word::create($param);
         $param = [
             'word' => '喧嘩',
-            'pronunciation' => 'kennka'
+            'letter' => 'kennka'
         ];
         Word::create($param);
         $param = [
             'word' => '原始反射',
-            'pronunciation' => 'gennsihannsya'
+            'letter' => 'gennsihannsya'
         ];
         Word::create($param);
         $param = [
             'word' => '原始歩行',
-            'pronunciation' => 'gennsihokou'
+            'letter' => 'gennsihokou'
         ];
         Word::create($param);
         $param = [
             'word' => '誤飲',
-            'pronunciation' => 'goinn'
+            'letter' => 'goinn'
         ];
         Word::create($param);
         $param = [
             'word' => '誤飲事故の応急処置',
-            'pronunciation' => 'goinnjikonooukyuusyoti'
+            'letter' => 'goinnjikonooukyuusyoti'
         ];
         Word::create($param);        
         $param = [
             'word' => '降園',
-            'pronunciation' => 'kouenn'
+            'letter' => 'kouenn'
         ];
         Word::create($param);        
         $param = [
             'word' => '公園遊び',
-            'pronunciation' => 'kouennasobi'
+            'letter' => 'kouennasobi'
         ];
         Word::create($param);        
         $param = [
             'word' => '好奇心',
-            'pronunciation' => 'koukisinn'
+            'letter' => 'koukisinn'
         ];
         Word::create($param);        
         $param = [
             'word' => '抗体',
-            'pronunciation' => 'koutai'
+            'letter' => 'koutai'
         ];
         Word::create($param);        
         $param = [
             'word' => '五感',
-            'pronunciation' => 'gokann'
+            'letter' => 'gokann'
         ];
         Word::create($param);        
         $param = [
             'word' => '午睡',
-            'pronunciation' => 'gosui'
+            'letter' => 'gosui'
         ];
         Word::create($param);        
         $param = [
             'word' => '公開保育',
-            'pronunciation' => 'koukaihoiku'
+            'letter' => 'koukaihoiku'
         ];
         Word::create($param);        
         $param = [
             'word' => 'コーナー保育',
-            'pronunciation' => 'ko-na-hoiku'
+            'letter' => 'ko-na-hoiku'
         ];
         Word::create($param);        
         $param = [
             'word' => '戸外遊び',
-            'pronunciation' => 'kogaiasobi'
+            'letter' => 'kogaiasobi'
         ];
         Word::create($param);        
         $param = [
             'word' => '孤食',
-            'pronunciation' => 'kosyoku'
+            'letter' => 'kosyoku'
         ];
         Word::create($param);        
         $param = [
             'word' => '子育て支援',
-            'pronunciation' => 'kosodatesienn'
+            'letter' => 'kosodatesienn'
         ];
         Word::create($param);        
         $param = [
             'word' => '子育て支援センター',
-            'pronunciation' => 'kosodatesiennsennta-'
+            'letter' => 'kosodatesiennsennta-'
         ];
         Word::create($param);        
         $param = [
             'word' => '五大栄養素',
-            'pronunciation' => 'godaieiyouso'
+            'letter' => 'godaieiyouso'
         ];
         Word::create($param);        
         $param = [
             'word' => 'ごっこ遊び',
-            'pronunciation' => 'gokkoasobi'
+            'letter' => 'gokkoasobi'
         ];
         Word::create($param);    
         $param = [
             'word' => '子ども主体の保育',
-            'pronunciation' => 'kodomosyutainohoiku'
+            'letter' => 'kodomosyutainohoiku'
         ];
         Word::create($param);    
         $param = [
             'word' => '子どもの権利条約',
-            'pronunciation' => 'kodomonokennrijouyaku'
+            'letter' => 'kodomonokennrijouyaku'
         ];
         Word::create($param);    
         $param = [
             'word' => '子どもの貧困',
-            'pronunciation' => 'kodomonohinnkonn'
+            'letter' => 'kodomonohinnkonn'
         ];
         Word::create($param);    
         $param = [
             'word' => '子ども食堂',
-            'pronunciation' => 'kodomosyokudou'
+            'letter' => 'kodomosyokudou'
         ];
         Word::create($param);    
         $param = [
             'word' => '粉ミルク',
-            'pronunciation' => 'konamiruku'
+            'letter' => 'konamiruku'
         ];
         Word::create($param);    
         $param = [
             'word' => '拳しゃぶり',
-            'pronunciation' => 'kobusisyaburi'
+            'letter' => 'kobusisyaburi'
         ];
         Word::create($param);    
         $param = [
             'word' => '固有覚',
-            'pronunciation' => 'koyuukaku'
+            'letter' => 'koyuukaku'
         ];
         Word::create($param);    
         $param = [
             'word' => '五領域',
-            'pronunciation' => 'goryouiki'
+            'letter' => 'goryouiki'
         ];
         Word::create($param);    
         $param = [
             'word' => '搾乳',
-            'pronunciation' => 'sakunyuu'
+            'letter' => 'sakunyuu'
         ];
         Word::create($param);    
         $param = [
             'word' => '里親',
-            'pronunciation' => 'satooya'
+            'letter' => 'satooya'
         ];
         Word::create($param);    
         $param = [
             'word' => '産休明け保育',
-            'pronunciation' => 'sannkyuuakehoiku'
+            'letter' => 'sannkyuuakehoiku'
         ];
         Word::create($param);    
         $param = [
             'word' => '3ヶ月検診',
-            'pronunciation' => 'sannkagetukennsinn'
+            'letter' => 'sannkagetukennsinn'
         ];
         Word::create($param);    
         $param = [
             'word' => '三語文',
-            'pronunciation' => 'sanngobunn'
+            'letter' => 'sanngobunn'
         ];
         Word::create($param);    
         $param = [
             'word' => '３歳児検診',
-            'pronunciation' => 'sannsaijikennsinn'
+            'letter' => 'sannsaijikennsinn'
         ];
         Word::create($param);    
         $param = [
             'word' => '産褥期',
-            'pronunciation' => 'sannjokuki'
+            'letter' => 'sannjokuki'
         ];
         Word::create($param);   
         $param = [
             'word' => '産科医',
-            'pronunciation' => 'sannkai'
+            'letter' => 'sannkai'
         ];
         Word::create($param);   
         $param = [
             'word' => '散歩',
-            'pronunciation' => 'sannpo'
+            'letter' => 'sannpo'
         ];
         Word::create($param);   
         $param = [
             'word' => '仕上げ磨き',
-            'pronunciation' => 'siagemigaki'
+            'letter' => 'siagemigaki'
         ];
         Word::create($param);   
         $param = [
             'word' => '自我意識の芽生え',
-            'pronunciation' => 'jigaisikinomebae'
+            'letter' => 'jigaisikinomebae'
         ];
         Word::create($param);   
         $param = [
             'word' => '叱る',
-            'pronunciation' => 'sikaru'
+            'letter' => 'sikaru'
         ];
         Word::create($param);   
         $param = [
             'word' => '叱る依存',
-            'pronunciation' => 'sikaruizonn'
+            'letter' => 'sikaruizonn'
         ];
         Word::create($param);   
         $param = [
             'word' => '児童館',
-            'pronunciation' => 'jidoukann'
+            'letter' => 'jidoukann'
         ];
         Word::create($param);   
         $param = [
             'word' => '児童虐待',
-            'pronunciation' => 'jidougyakutai'
+            'letter' => 'jidougyakutai'
         ];
         Word::create($param);   
         $param = [
             'word' => '児童相談所',
-            'pronunciation' => 'jidousoudannjo'
+            'letter' => 'jidousoudannjo'
         ];
         Word::create($param);   
         $param = [
             'word' => '児童手当',
-            'pronunciation' => 'jidouteate'
+            'letter' => 'jidouteate'
         ];
         Word::create($param);   
         $param = [
             'word' => '児童の最善の利益',
-            'pronunciation' => 'jidounosaizennnorieki'
+            'letter' => 'jidounosaizennnorieki'
         ];
         Word::create($param);   
         $param = [
             'word' => '児童発達支援管理責任者',
-            'pronunciation' => 'jidouhattatusiennkannrisekininnsya'
+            'letter' => 'jidouhattatusiennkannrisekininnsya'
         ];
         Word::create($param);   
         $param = [
             'word' => '児童福祉法',
-            'pronunciation' => 'jidoufukusihou'
+            'letter' => 'jidoufukusihou'
         ];
         Word::create($param);   
         $param = [
             'word' => '児童福祉施設',
-            'pronunciation' => 'jidoufukusisisetu'
+            'letter' => 'jidoufukusisisetu'
         ];
         Word::create($param);   
         $param = [
             'word' => 'シャフリングベビー',
-            'pronunciation' => 'syafurinngubebi-'
+            'letter' => 'syafurinngubebi-'
         ];
         Word::create($param);   
         $param = [
             'word' => '社会性',
-            'pronunciation' => 'syakaisei'
+            'letter' => 'syakaisei'
         ];
         Word::create($param);  
         $param = [
             'word' => '社会的養護',
-            'pronunciation' => 'syakaitekiyougo'
+            'letter' => 'syakaitekiyougo'
         ];
         Word::create($param);  
         $param = [
             'word' => '授乳',
-            'pronunciation' => 'junyuu'
+            'letter' => 'junyuu'
         ];
         Word::create($param);  
         $param = [
             'word' => '少子化',
-            'pronunciation' => 'syousika'
+            'letter' => 'syousika'
         ];
         Word::create($param);  
         $param = [
             'word' => '情操',
-            'pronunciation' => 'jousou'
+            'letter' => 'jousou'
         ];
         Word::create($param);  
         $param = [
             'word' => '情緒の安定',
-            'pronunciation' => 'joutyonoanntei'
+            'letter' => 'joutyonoanntei'
         ];
         Word::create($param);  
         $param = [
             'word' => '自由保育',
-            'pronunciation' => 'jiyuuhoiku'
+            'letter' => 'jiyuuhoiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '出生率',
-            'pronunciation' => 'syussyouritu'
+            'letter' => 'syussyouritu'
         ];
         Word::create($param);  
         $param = [
             'word' => '就労証明書',
-            'pronunciation' => 'syuurousyoumeisyo'
+            'letter' => 'syuurousyoumeisyo'
         ];
         Word::create($param);  
         $param = [
             'word' => 'シュタイナー教育',
-            'pronunciation' => 'syutaina-kyouiku'
+            'letter' => 'syutaina-kyouiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '情操教育',
-            'pronunciation' => 'jousoukyouiku'
+            'letter' => 'jousoukyouiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '初乳',
-            'pronunciation' => 'syonyuu'
+            'letter' => 'syonyuu'
         ];
         Word::create($param);  
         $param = [
             'word' => '障害児保育',
-            'pronunciation' => 'syougaijihoiku'
+            'letter' => 'syougaijihoiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '消毒',
-            'pronunciation' => 'syoudoku'
+            'letter' => 'syoudoku'
         ];
         Word::create($param);  
         $param = [
             'word' => '小児科医',
-            'pronunciation' => 'syounikai'
+            'letter' => 'syounikai'
         ];
         Word::create($param);  
         $param = [
             'word' => '触覚過敏',
-            'pronunciation' => 'syokkakukabinn'
+            'letter' => 'syokkakukabinn'
         ];
         Word::create($param);  
         $param = [
             'word' => '食育',
-            'pronunciation' => 'syokuiku'
+            'letter' => 'syokuiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '食中毒',
-            'pronunciation' => 'syokutyuudoku'
+            'letter' => 'syokutyuudoku'
         ];
         Word::create($param);  
         $param = [
             'word' => '食物アレルギー',
-            'pronunciation' => 'syokumotuarerugi-'
+            'letter' => 'syokumotuarerugi-'
         ];
         Word::create($param);  
         $param = [
             'word' => '助産師',
-            'pronunciation' => 'josannsi'
+            'letter' => 'josannsi'
         ];
         Word::create($param); 
         $param = [
             'word' => '新型コロナウィルス',
-            'pronunciation' => 'sinngatakoronaulirusu'
+            'letter' => 'sinngatakoronaulirusu'
         ];
         Word::create($param);  
         $param = [
             'word' => '人権',
-            'pronunciation' => 'jinnkenn'
+            'letter' => 'jinnkenn'
         ];
         Word::create($param);  
         $param = [
             'word' => '人工呼吸',
-            'pronunciation' => 'jinnkoukokyuu'
+            'letter' => 'jinnkoukokyuu'
         ];
         Word::create($param);  
         $param = [
             'word' => '新生児期',
-            'pronunciation' => 'sinnseijiki'
+            'letter' => 'sinnseijiki'
         ];
         Word::create($param);  
         $param = [
             'word' => '新生児メレナ',
-            'pronunciation' => 'sinnseijimerena'
+            'letter' => 'sinnseijimerena'
         ];
         Word::create($param);  
         $param = [
             'word' => '心肺蘇生法',
-            'pronunciation' => 'sinnpaisoseihou'
+            'letter' => 'sinnpaisoseihou'
         ];
         Word::create($param);  
         $param = [
             'word' => '水痘',
-            'pronunciation' => 'suitou'
+            'letter' => 'suitou'
         ];
         Word::create($param);  
         $param = [
             'word' => '睡眠',
-            'pronunciation' => 'suiminn'
+            'letter' => 'suiminn'
         ];
         Word::create($param); 
         $param = [
             'word' => 'スキンケア',
-            'pronunciation' => 'sukinnkea'
+            'letter' => 'sukinnkea'
         ];
         Word::create($param);  
         $param = [
             'word' => 'スキンシップ',
-            'pronunciation' => 'sukinnsippu'
+            'letter' => 'sukinnsippu'
         ];
         Word::create($param);  
         $param = [
             'word' => 'スタイ',
-            'pronunciation' => 'sutai'
+            'letter' => 'sutai'
         ];
         Word::create($param);  
         $param = [
             'word' => '砂場遊び',
-            'pronunciation' => 'sunabaasobi'
+            'letter' => 'sunabaasobi'
         ];
         Word::create($param);  
         $param = [
             'word' => 'ずりばい',
-            'pronunciation' => 'zuribai'
+            'letter' => 'zuribai'
         ];
         Word::create($param);  
         $param = [
             'word' => '生活リズム',
-            'pronunciation' => 'seikaturizumu'
+            'letter' => 'seikaturizumu'
         ];
         Word::create($param);  
         $param = [
             'word' => '性教育',
-            'pronunciation' => 'seikyouiku'
+            'letter' => 'seikyouiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '成長曲線',
-            'pronunciation' => 'seityoukyokusenn'
+            'letter' => 'seityoukyokusenn'
         ];
         Word::create($param);  
         $param = [
             'word' => '生理的微笑',
-            'pronunciation' => 'seiritekibisyou'
+            'letter' => 'seiritekibisyou'
         ];
         Word::create($param);  
         $param = [
             'word' => '設定保育',
-            'pronunciation' => 'setteihoiku'
+            'letter' => 'setteihoiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '接触感染',
-            'pronunciation' => 'sessyokukannsenn'
+            'letter' => 'sessyokukannsenn'
         ];
         Word::create($param);  
         $param = [
             'word' => '前庭覚',
-            'pronunciation' => 'zennteikaku'
+            'letter' => 'zennteikaku'
         ];
         Word::create($param);  
         $param = [
             'word' => '選択制保育',
-            'pronunciation' => 'senntakuseihoiku'
+            'letter' => 'senntakuseihoiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '添い乳',
-            'pronunciation' => 'soititi'
+            'letter' => 'soititi'
         ];
         Word::create($param);  
         $param = [
             'word' => '添い寝',
-            'pronunciation' => 'soine'
+            'letter' => 'soine'
         ];
         Word::create($param);  
         $param = [
             'word' => '咀嚼',
-            'pronunciation' => 'sosyaku'
+            'letter' => 'sosyaku'
         ];
         Word::create($param);  
         $param = [
             'word' => '卒乳',
-            'pronunciation' => 'sotunyuu'
+            'letter' => 'sotunyuu'
         ];
         Word::create($param);  
         $param = [
             'word' => 'ゾーン保育',
-            'pronunciation' => 'zo-nnhoiku'
+            'letter' => 'zo-nnhoiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '添い乳',
-            'pronunciation' => 'soititi'
+            'letter' => 'soititi'
         ];
         Word::create($param);  
         $param = [
             'word' => '待機児童',
-            'pronunciation' => 'taikijidou'
+            'letter' => 'taikijidou'
         ];
         Word::create($param);  
         $param = [
             'word' => '退行現象',
-            'pronunciation' => 'taikougennsyou'
+            'letter' => 'taikougennsyou'
         ];
         Word::create($param);  
         $param = [
             'word' => '大泉門',
-            'pronunciation' => 'daisennmonn'
+            'letter' => 'daisennmonn'
         ];
         Word::create($param);  
         $param = [
             'word' => 'たそがれ泣き',
-            'pronunciation' => 'tasogarenaki'
+            'letter' => 'tasogarenaki'
         ];
         Word::create($param);  
         $param = [
             'word' => '多胎児育児',
-            'pronunciation' => 'tataijiikuji'
+            'letter' => 'tataijiikuji'
         ];
         Word::create($param);  
         $param = [
             'word' => 'たて抱き',
-            'pronunciation' => 'tatedaki'
+            'letter' => 'tatedaki'
         ];
         Word::create($param);  
         $param = [
             'word' => '縦割り保育',
-            'pronunciation' => 'tatewarihoiku'
+            'letter' => 'tatewarihoiku'
         ];
         Word::create($param);  
         $param = [
             'word' => '多様性',
-            'pronunciation' => 'tayousei'
+            'letter' => 'tayousei'
         ];
         Word::create($param);  
         $param = [
             'word' => 'だれでもトイレ',
-            'pronunciation' => 'daredemotoire'
+            'letter' => 'daredemotoire'
         ];
         Word::create($param);  
         $param = [
             'word' => '探索行動',
-            'pronunciation' => 'tannsakukoudou'
+            'letter' => 'tannsakukoudou'
         ];
         Word::create($param);  
         $param = [
             'word' => '地域子育て支援センター',
-            'pronunciation' => 'tiikikosodatesiennsennta-'
+            'letter' => 'tiikikosodatesiennsennta-'
         ];
         Word::create($param);  
         $param = [
             'word' => '知育玩具',
-            'pronunciation' => 'tiikuganngu'
+            'letter' => 'tiikuganngu'
         ];
         Word::create($param);  
         $param = [
             'word' => 'チック',
-            'pronunciation' => 'tikku'
+            'letter' => 'tikku'
         ];
         Word::create($param);  
         $param = [
             'word' => '窒息',
-            'pronunciation' => 'tissoku'
+            'letter' => 'tissoku'
         ];
         Word::create($param);  
         $param = [
             'word' => 'チャイルドシート',
-            'pronunciation' => 'tyairudosi-to'
+            'letter' => 'tyairudosi-to'
         ];
         Word::create($param);  
         $param = [
             'word' => 'チャイルドマインダー',
-            'pronunciation' => 'tyairudomainnda-'
+            'letter' => 'tyairudomainnda-'
         ];
         Word::create($param);  
         $param = [
             'word' => '注意',
-            'pronunciation' => 'tyuui'
+            'letter' => 'tyuui'
         ];
         Word::create($param);  
         $param = [
             'word' => '調製粉乳',
-            'pronunciation' => 'tyouseifunnnyuu'
+            'letter' => 'tyouseifunnnyuu'
         ];
         Word::create($param);  
         $param = [
             'word' => '調乳室',
-            'pronunciation' => 'tyounyuusitu'
+            'letter' => 'tyounyuusitu'
         ];
         Word::create($param);  
         $param = [
             'word' => '調理師',
-            'pronunciation' => 'tyourisi'
+            'letter' => 'tyourisi'
         ];
         Word::create($param);  
         $param = [
             'word' => '追視',
-            'pronunciation' => 'tuisi'
+            'letter' => 'tuisi'
         ];
         Word::create($param);  
         $param = [
             'word' => 'つかまり立ち',
-            'pronunciation' => 'tukamaridati'
+            'letter' => 'tukamaridati'
         ];
         Word::create($param);  
         $param = [
             'word' => 'つたい歩き',
-            'pronunciation' => 'tutaiaruki'
+            'letter' => 'tutaiaruki'
         ];
         Word::create($param);  
         $param = [
             'word' => '手足口病',
-            'pronunciation' => 'teasikutibyou'
+            'letter' => 'teasikutibyou'
         ];
         Word::create($param);  
         $param = [
             'word' => '手遊び',
-            'pronunciation' => 'teasobi'
+            'letter' => 'teasobi'
         ];
         Word::create($param);  
         $param = [
             'word' => '手洗い',
-            'pronunciation' => 'tearai'
+            'letter' => 'tearai'
         ];
         Word::create($param);  
         $param = [
             'word' => '低体重児',
-            'pronunciation' => 'teitaijuuji'
+            'letter' => 'teitaijuuji'
         ];
         Word::create($param);  
         $param = [
             'word' => '手作りおもちゃ',
-            'pronunciation' => 'tedukuriomotya'
+            'letter' => 'tedukuriomotya'
         ];
         Word::create($param);  
         $param = [
             'word' => 'トイレトレーニング',
-            'pronunciation' => 'toiretore-ninngu'
+            'letter' => 'toiretore-ninngu'
         ];
         Word::create($param);  
         $param = [
             'word' => '同性婚',
-            'pronunciation' => 'douseikonn'
+            'letter' => 'douseikonn'
         ];
         Word::create($param);  
         $param = [
             'word' => '登園許可書',
-            'pronunciation' => 'touennkyokasyo'
+            'letter' => 'touennkyokasyo'
         ];
         Word::create($param); 
         $param = [
             'word' => '突発性発疹',
-            'pronunciation' => 'toppatuseihossinn'
+            'letter' => 'toppatuseihossinn'
         ];
         Word::create($param); 
         $param = [
             'word' => 'とびひ',
-            'pronunciation' => 'tobihi'
+            'letter' => 'tobihi'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ナーサリー',
-            'pronunciation' => 'na-sari-'
+            'letter' => 'na-sari-'
         ];
         Word::create($param); 
         $param = [
             'word' => '習いごと',
-            'pronunciation' => 'naraigoto'
+            'letter' => 'naraigoto'
         ];
         Word::create($param); 
         $param = [
             'word' => '慣らし保育',
-            'pronunciation' => 'narasihoiku'
+            'letter' => 'narasihoiku'
         ];
         Word::create($param); 
         $param = [
             'word' => '喃語',
-            'pronunciation' => 'nanngo'
+            'letter' => 'nanngo'
         ];
         Word::create($param); 
         $param = [
             'word' => '握り反射',
-            'pronunciation' => 'nigirihannsya'
+            'letter' => 'nigirihannsya'
         ];
         Word::create($param); 
         $param = [
             'word' => '二語文',
-            'pronunciation' => 'nigobunn'
+            'letter' => 'nigobunn'
         ];
         Word::create($param); 
         $param = [
             'word' => '日本脳炎',
-            'pronunciation' => 'nihonnnouenn'
+            'letter' => 'nihonnnouenn'
         ];
         Word::create($param); 
         $param = [
             'word' => '乳歯',
-            'pronunciation' => 'nyuusi'
+            'letter' => 'nyuusi'
         ];
         Word::create($param); 
         $param = [
             'word' => '乳児',
-            'pronunciation' => 'nyuuji'
+            'letter' => 'nyuuji'
         ];
         Word::create($param); 
         $param = [
             'word' => '乳児湿疹',
-            'pronunciation' => 'nyuujisissinn'
+            'letter' => 'nyuujisissinn'
         ];
         Word::create($param); 
         $param = [
             'word' => '乳児保育',
-            'pronunciation' => 'nyuujihoiku'
+            'letter' => 'nyuujihoiku'
         ];
         Word::create($param); 
         $param = [
             'word' => '乳幼児突然死症候群',
-            'pronunciation' => 'nyuuyoujitotuzennsisyoukougunn'
+            'letter' => 'nyuuyoujitotuzennsisyoukougunn'
         ];
         Word::create($param); 
         $param = [
             'word' => '認可外保育施設',
-            'pronunciation' => 'ninnkagaihoikusisetu'
+            'letter' => 'ninnkagaihoikusisetu'
         ];
         Word::create($param); 
         $param = [
             'word' => '認可保育園',
-            'pronunciation' => 'ninnkahoikuenn'
+            'letter' => 'ninnkahoikuenn'
         ];
         Word::create($param); 
         $param = [
             'word' => '認定こども園',
-            'pronunciation' => 'ninnteikodomoenn'
+            'letter' => 'ninnteikodomoenn'
         ];
         Word::create($param); 
         $param = [
             'word' => '認証保育園',
-            'pronunciation' => 'ninnsyouhoikuenn'
+            'letter' => 'ninnsyouhoikuenn'
         ];
         Word::create($param); 
         $param = [
             'word' => '布おむつ',
-            'pronunciation' => 'nunoomutu'
+            'letter' => 'nunoomutu'
         ];
         Word::create($param); 
         $param = [
             'word' => '寝かしつけ',
-            'pronunciation' => 'nekasituke'
+            'letter' => 'nekasituke'
         ];
         Word::create($param); 
         $param = [
             'word' => '寝返り',
-            'pronunciation' => 'negaeri'
+            'letter' => 'negaeri'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ネグレクト',
-            'pronunciation' => 'negurekuto'
+            'letter' => 'negurekuto'
         ];
         Word::create($param); 
         $param = [
             'word' => '熱中症',
-            'pronunciation' => 'nettyuusyou'
+            'letter' => 'nettyuusyou'
         ];
         Word::create($param); 
         $param = [
             'word' => '熱性けいれん',
-            'pronunciation' => 'netuseikeirenn'
+            'letter' => 'netuseikeirenn'
         ];
         Word::create($param); 
         $param = [
             'word' => '年少児',
-            'pronunciation' => 'nennsyouji'
+            'letter' => 'nennsyouji'
         ];
         Word::create($param); 
         $param = [
             'word' => '年中児',
-            'pronunciation' => 'nenntyuuji'
+            'letter' => 'nenntyuuji'
         ];
         Word::create($param); 
         $param = [
             'word' => '年長児',
-            'pronunciation' => 'nenntyouji'
+            'letter' => 'nenntyouji'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ノロウィルス',
-            'pronunciation' => 'noroulirusu'
+            'letter' => 'noroulirusu'
         ];
         Word::create($param); 
         $param = [
             'word' => '把握反射',
-            'pronunciation' => 'haakuhannsya'
+            'letter' => 'haakuhannsya'
         ];
         Word::create($param); 
         $param = [
             'word' => '排尿間隔',
-            'pronunciation' => 'hainyoukannkaku'
+            'letter' => 'hainyoukannkaku'
         ];
         Word::create($param); 
         $param = [
             'word' => 'はいはい',
-            'pronunciation' => 'haihai'
+            'letter' => 'haihai'
         ];
         Word::create($param); 
         $param = [
             'word' => '背部叩打法',
-            'pronunciation' => 'haibukoudahou'
+            'letter' => 'haibukoudahou'
         ];
         Word::create($param); 
         $param = [
             'word' => '歯がため',
-            'pronunciation' => 'hagatame'
+            'letter' => 'hagatame'
         ];
         Word::create($param); 
         $param = [
             'word' => '歯ぎしり',
-            'pronunciation' => 'hagisiri'
+            'letter' => 'hagisiri'
         ];
         Word::create($param); 
         $param = [
             'word' => '麻疹',
-            'pronunciation' => 'hasika'
+            'letter' => 'hasika'
         ];
         Word::create($param); 
         $param = [
             'word' => '発達',
-            'pronunciation' => 'hattatu'
+            'letter' => 'hattatu'
         ];
         Word::create($param); 
         $param = [
             'word' => '発達支援',
-            'pronunciation' => 'hattatusienn'
+            'letter' => 'hattatusienn'
         ];
         Word::create($param); 
         $param = [
             'word' => '発達障害',
-            'pronunciation' => 'hattatusyougai'
+            'letter' => 'hattatusyougai'
         ];
         Word::create($param); 
         $param = [
             'word' => '発達段階',
-            'pronunciation' => 'hattatudannkai'
+            'letter' => 'hattatudannkai'
         ];
         Word::create($param); 
         $param = [
             'word' => '発熱',
-            'pronunciation' => 'hatunetu'
+            'letter' => 'hatunetu'
         ];
         Word::create($param); 
         $param = [
             'word' => 'パネルシアター',
-            'pronunciation' => 'panerusiata-'
+            'letter' => 'panerusiata-'
         ];
         Word::create($param); 
         $param = [
             'word' => '歯磨き',
-            'pronunciation' => 'hamigaki'
+            'letter' => 'hamigaki'
         ];
         Word::create($param); 
         $param = [
             'word' => '発達支援',
-            'pronunciation' => 'hattatusienn'
+            'letter' => 'hattatusienn'
         ];
         Word::create($param); 
         $param = [
             'word' => '早寝早起き朝ごはん',
-            'pronunciation' => 'hayanehayaokiasagohann'
+            'letter' => 'hayanehayaokiasagohann'
         ];
         Word::create($param); 
         $param = [
             'word' => '腹ばい',
-            'pronunciation' => 'harabai'
+            'letter' => 'harabai'
         ];
         Word::create($param); 
         $param = [
             'word' => 'バリアフリー',
-            'pronunciation' => 'bariafuri-'
+            'letter' => 'bariafuri-'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ハンドリガード',
-            'pronunciation' => 'hanndoriga-do'
+            'letter' => 'hanndoriga-do'
         ];
         Word::create($param); 
         $param = [
             'word' => '引き起こし反射',
-            'pronunciation' => 'hikiokosihannsya'
+            'letter' => 'hikiokosihannsya'
         ];
         Word::create($param); 
         $param = [
             'word' => '一人遊び',
-            'pronunciation' => 'hitoriasobi'
+            'letter' => 'hitoriasobi'
         ];
         Word::create($param); 
         $param = [
             'word' => '人見知り',
-            'pronunciation' => 'hitomisiri'
+            'letter' => 'hitomisiri'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ひとり親支援',
-            'pronunciation' => 'hitorioyasienn'
+            'letter' => 'hitorioyasienn'
         ];
         Word::create($param); 
         $param = [
             'word' => '飛沫感染',
-            'pronunciation' => 'himatukannsenn'
+            'letter' => 'himatukannsenn'
         ];
         Word::create($param); 
         $param = [
             'word' => '百日咳',
-            'pronunciation' => 'hyakunitizeki'
+            'letter' => 'hyakunitizeki'
         ];
         Word::create($param); 
         $param = [
             'word' => '日焼け止め',
-            'pronunciation' => 'hiyakedome'
+            'letter' => 'hiyakedome'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ヒヤリハット',
-            'pronunciation' => 'hiyarihatto'
+            'letter' => 'hiyarihatto'
         ];
         Word::create($param); 
         $param = [
             'word' => '病児保育',
-            'pronunciation' => 'byoujihoiku'
+            'letter' => 'byoujihoiku'
         ];
         Word::create($param); 
         $param = [
             'word' => '敏感期',
-            'pronunciation' => 'binnkannki'
+            'letter' => 'binnkannki'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ファーストシューズ',
-            'pronunciation' => 'fa-sutosyu-zu'
+            'letter' => 'fa-sutosyu-zu'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ファミリーサポート',
-            'pronunciation' => 'famiri-sapo-to'
+            'letter' => 'famiri-sapo-to'
         ];
         Word::create($param); 
         $param = [
             'word' => '風疹',
-            'pronunciation' => 'fuusinn'
+            'letter' => 'fuusinn'
         ];
         Word::create($param); 
         $param = [
             'word' => '夫婦別性',
-            'pronunciation' => 'fuufubetusei'
+            'letter' => 'fuufubetusei'
         ];
         Word::create($param); 
         $param = [
             'word' => 'フォローアップミルク',
-            'pronunciation' => 'foro-appumiruku'
+            'letter' => 'foro-appumiruku'
         ];
         Word::create($param); 
         $param = [
             'word' => '不器用',
-            'pronunciation' => 'bukiyou'
+            'letter' => 'bukiyou'
         ];
         Word::create($param); 
         $param = [
             'word' => '腹部突き上げ法',
-            'pronunciation' => 'fukubutukiagehou'
+            'letter' => 'fukubutukiagehou'
         ];
         Word::create($param); 
         $param = [
             'word' => '不登校',
-            'pronunciation' => 'futoukou'
+            'letter' => 'futoukou'
         ];
         Word::create($param); 
         $param = [
             'word' => 'プリスクール',
-            'pronunciation' => 'purisuku-ru'
+            'letter' => 'purisuku-ru'
         ];
         Word::create($param); 
         $param = [
             'word' => 'プール事故',
-            'pronunciation' => 'pu-rujiko'
+            'letter' => 'pu-rujiko'
         ];
         Word::create($param); 
         $param = [
             'word' => 'プール熱',
-            'pronunciation' => 'pu-runetu'
+            'letter' => 'pu-runetu'
         ];
         Word::create($param); 
         $param = [
             'word' => 'フレーベル',
-            'pronunciation' => 'fure-beru'
+            'letter' => 'fure-beru'
         ];
         Word::create($param); 
 
         $param = [
             'word' => 'プログラミング教育',
-            'pronunciation' => 'puroguraminngukyouiku'
+            'letter' => 'puroguraminngukyouiku'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ヘアカット',
-            'pronunciation' => 'heakatto'
+            'letter' => 'heakatto'
         ];
         Word::create($param); 
         $param = [
             'word' => '並行遊び',
-            'pronunciation' => 'heikouasobi'
+            'letter' => 'heikouasobi'
         ];
         Word::create($param); 
         $param = [
             'word' => 'へその緒',
-            'pronunciation' => 'hesonoo'
+            'letter' => 'hesonoo'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ベビーオイル',
-            'pronunciation' => 'bebi-oiru'
+            'letter' => 'bebi-oiru'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ベビーカー',
-            'pronunciation' => 'bebi-ka-'
+            'letter' => 'bebi-ka-'
         ];
         Word::create($param); 
         $param = [
             'word' => 'べピーパウダー',
-            'pronunciation' => 'bebi-pauda-'
+            'letter' => 'bebi-pauda-'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ベビーフード',
-            'pronunciation' => 'bebi-fu-do'
+            'letter' => 'bebi-fu-do'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ベビーマッサージ',
-            'pronunciation' => 'bebi-massa-ji'
+            'letter' => 'bebi-massa-ji'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ベビーベッド',
-            'pronunciation' => 'bebi-beddo'
+            'letter' => 'bebi-beddo'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ペープサート',
-            'pronunciation' => 'pe-pusa-to'
+            'letter' => 'pe-pusa-to'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ヘルパンギーナ',
-            'pronunciation' => 'herupanngi-na'
+            'letter' => 'herupanngi-na'
         ];
         Word::create($param); 
         $param = [
             'word' => '偏食',
-            'pronunciation' => 'hennsyoku'
+            'letter' => 'hennsyoku'
         ];
         Word::create($param); 
         $param = [
             'word' => '保育園',
-            'pronunciation' => 'hoikuenn'
+            'letter' => 'hoikuenn'
         ];
         Word::create($param); 
         $param = [
             'word' => '保育士',
-            'pronunciation' => 'hoikusi'
+            'letter' => 'hoikusi'
         ];
         Word::create($param); 
         $param = [
             'word' => '保育所保育指針',
-            'pronunciation' => 'hoikusyohoikusisinn'
+            'letter' => 'hoikusyohoikusisinn'
         ];
         Word::create($param); 
         $param = [
             'word' => '保育ママ',
-            'pronunciation' => 'hoikumama'
+            'letter' => 'hoikumama'
         ];
         Word::create($param); 
         $param = [
             'word' => '保育料',
-            'pronunciation' => 'hoikuryou'
+            'letter' => 'hoikuryou'
         ];
         Word::create($param); 
         $param = [
             'word' => '放課後等デイサービス',
-            'pronunciation' => 'houkagotoudeisa-bisu'
+            'letter' => 'houkagotoudeisa-bisu'
         ];
         Word::create($param); 
         $param = [
             'word' => '保護者会',
-            'pronunciation' => 'hogosyakai'
+            'letter' => 'hogosyakai'
         ];
         Word::create($param); 
         $param = [
             'word' => '母子関係',
-            'pronunciation' => 'bosikannkei'
+            'letter' => 'bosikannkei'
         ];
         Word::create($param); 
         $param = [
             'word' => '母子手帳',
-            'pronunciation' => 'bositetyou'
+            'letter' => 'bositetyou'
         ];
         Word::create($param); 
         $param = [
             'word' => '保湿剤',
-            'pronunciation' => 'hosituzai'
+            'letter' => 'hosituzai'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ボディイメージ',
-            'pronunciation' => 'bodhiime-ji'
+            'letter' => 'bodhiime-ji'
         ];
         Word::create($param); 
         $param = [
             'word' => '母乳',
-            'pronunciation' => 'bonyuu'
+            'letter' => 'bonyuu'
         ];
         Word::create($param); 
         $param = [
             'word' => '哺乳反射',
-            'pronunciation' => 'honyuuhannsya'
+            'letter' => 'honyuuhannsya'
         ];
         Word::create($param); 
         $param = [
             'word' => '哺乳瓶',
-            'pronunciation' => 'honyuubinn'
+            'letter' => 'honyuubinn'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ほふく室',
-            'pronunciation' => 'hofukusitu'
+            'letter' => 'hofukusitu'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ホームスクーリング',
-            'pronunciation' => 'ho-musuku-rinngu'
+            'letter' => 'ho-musuku-rinngu'
         ];
         Word::create($param); 
         $param = [
             'word' => '褒める',
-            'pronunciation' => 'homeru'
+            'letter' => 'homeru'
         ];
         Word::create($param); 
         $param = [
             'word' => 'マグ',
-            'pronunciation' => 'magu'
+            'letter' => 'magu'
         ];
         Word::create($param); 
         $param = [
             'word' => 'マザリング',
-            'pronunciation' => 'mazarinngu'
+            'letter' => 'mazarinngu'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ままごと遊び',
-            'pronunciation' => 'mamagotoasobi'
+            'letter' => 'mamagotoasobi'
         ];
         Word::create($param); 
         $param = [
             'word' => '水遊び',
-            'pronunciation' => 'mizuasobi'
+            'letter' => 'mizuasobi'
         ];
         Word::create($param); 
         $param = [
             'word' => '水いぼ',
-            'pronunciation' => 'mizuibo'
+            'letter' => 'mizuibo'
         ];
         Word::create($param); 
         $param = [
             'word' => '未就園児',
-            'pronunciation' => 'misyuuennji'
+            'letter' => 'misyuuennji'
         ];
         Word::create($param); 
         $param = [
             'word' => '未就学児',
-            'pronunciation' => 'misyuugakuji'
+            'letter' => 'misyuugakuji'
         ];
         Word::create($param); 
         $param = [
             'word' => '水ぼうそう',
-            'pronunciation' => 'mizubousou'
+            'letter' => 'mizubousou'
         ];
         Word::create($param); 
         $param = [
             'word' => '見立て遊び',
-            'pronunciation' => 'mitateasobi'
+            'letter' => 'mitateasobi'
         ];
         Word::create($param); 
         $param = [
             'word' => '見守る保育',
-            'pronunciation' => 'mimamoruhoiku'
+            'letter' => 'mimamoruhoiku'
         ];
         Word::create($param); 
         $param = [
             'word' => '民間保育園',
-            'pronunciation' => 'minnkannhoikuenn'
+            'letter' => 'minnkannhoikuenn'
         ];
         Word::create($param); 
         $param = [
             'word' => '向き癖',
-            'pronunciation' => 'mukiguse'
+            'letter' => 'mukiguse'
         ];
         Word::create($param); 
         $param = [
             'word' => '虫除け',
-            'pronunciation' => 'musiyoke'
+            'letter' => 'musiyoke'
         ];
         Word::create($param); 
         $param = [
             'word' => '虫歯予防',
-            'pronunciation' => 'musibayobou'
+            'letter' => 'musibayobou'
         ];
         Word::create($param); 
         $param = [
             'word' => 'メタ認知',
-            'pronunciation' => 'metaninnti'
+            'letter' => 'metaninnti'
         ];
         Word::create($param); 
         $param = [
             'word' => '目と手の協応',
-            'pronunciation' => 'metotennnokyouou'
+            'letter' => 'metotennnokyouou'
         ];
         Word::create($param); 
         $param = [
             'word' => '免疫機能',
-            'pronunciation' => 'mennekikinou'
+            'letter' => 'mennekikinou'
         ];
         Word::create($param); 
         $param = [
             'word' => '蒙古斑',
-            'pronunciation' => 'moukohann'
+            'letter' => 'moukohann'
         ];
         Word::create($param); 
         $param = [
             'word' => '沐浴',
-            'pronunciation' => 'mokuyoku'
+            'letter' => 'mokuyoku'
         ];
         Word::create($param); 
         $param = [
             'word' => '模倣',
-            'pronunciation' => 'mohou'
+            'letter' => 'mohou'
         ];
         Word::create($param); 
         $param = [
             'word' => '森のようちえん',
-            'pronunciation' => 'morinoyoutienn'
+            'letter' => 'morinoyoutienn'
         ];
         Word::create($param); 
         $param = [
             'word' => 'モビール',
-            'pronunciation' => 'mobi-ru'
+            'letter' => 'mobi-ru'
         ];
         Word::create($param); 
         $param = [
             'word' => 'モロー反射',
-            'pronunciation' => 'moro-hannsya'
+            'letter' => 'moro-hannsya'
         ];
         Word::create($param); 
         $param = [
             'word' => 'モンテッソーリ',
-            'pronunciation' => 'monntesso-ri'
+            'letter' => 'monntesso-ri'
         ];
         Word::create($param); 
         $param = [
             'word' => '夜間保育',
-            'pronunciation' => 'yakannhoiku'
+            'letter' => 'yakannhoiku'
         ];
         Word::create($param); 
         $param = [
             'word' => '夜驚症',
-            'pronunciation' => 'yakyousyou'
+            'letter' => 'yakyousyou'
         ];
         Word::create($param); 
         $param = [
             'word' => '揺さぶられっ子症候群',
-            'pronunciation' => 'yusaburarekkosyoukougunn'
+            'letter' => 'yusaburarekkosyoukougunn'
         ];
         Word::create($param); 
         $param = [
             'word' => '指さし',
-            'pronunciation' => 'yubisasi'
+            'letter' => 'yubisasi'
         ];
         Word::create($param); 
         $param = [
             'word' => '指しゃぶり',
-            'pronunciation' => 'yubisyaburi'
+            'letter' => 'yubisyaburi'
         ];
         Word::create($param); 
         $param = [
             'word' => '養護',
-            'pronunciation' => 'yougo'
+            'letter' => 'yougo'
         ];
         Word::create($param); 
         $param = [
             'word' => '養子縁組',
-            'pronunciation' => 'yousienngumi'
+            'letter' => 'yousienngumi'
         ];
         Word::create($param); 
         $param = [
             'word' => '幼児食',
-            'pronunciation' => 'youjisyoku'
+            'letter' => 'youjisyoku'
         ];
         Word::create($param); 
         $param = [
             'word' => '羊水',
-            'pronunciation' => 'yousui'
+            'letter' => 'yousui'
         ];
         Word::create($param); 
         $param = [
             'word' => '幼稚園',
-            'pronunciation' => 'youtienn'
+            'letter' => 'youtienn'
         ];
         Word::create($param); 
         $param = [
             'word' => '幼稚園教育要領',
-            'pronunciation' => 'youtiennkyouikuyouryou'
+            'letter' => 'youtiennkyouikuyouryou'
         ];
         Word::create($param); 
         $param = [
             'word' => '幼稚園教諭',
-            'pronunciation' => 'youtiennkyouyu'
+            'letter' => 'youtiennkyouyu'
         ];
         Word::create($param); 
         $param = [
             'word' => '幼保一元化',
-            'pronunciation' => 'youhoitigennka'
+            'letter' => 'youhoitigennka'
         ];
         Word::create($param); 
         $param = [
             'word' => '夜泣き',
-            'pronunciation' => 'yonaki'
+            'letter' => 'yonaki'
         ];
         Word::create($param); 
         $param = [
             'word' => '予防接種',
-            'pronunciation' => 'yobousessyu'
+            'letter' => 'yobousessyu'
         ];
         Word::create($param); 
         $param = [
             'word' => '読み聞かせ',
-            'pronunciation' => 'yomikikase'
+            'letter' => 'yomikikase'
         ];
         Word::create($param); 
         $param = [
             'word' => 'リズム遊び',
-            'pronunciation' => 'rizumuasobi'
+            'letter' => 'rizumuasobi'
         ];
         Word::create($param); 
         $param = [
             'word' => 'リトミック',
-            'pronunciation' => 'ritomikku'
+            'letter' => 'ritomikku'
         ];
         Word::create($param); 
         $param = [
             'word' => '離乳食',
-            'pronunciation' => 'rinyuusyoku'
+            'letter' => 'rinyuusyoku'
         ];
         Word::create($param); 
         $param = [
             'word' => '離乳食初期',
-            'pronunciation' => 'rinyuusyokusyoki'
+            'letter' => 'rinyuusyokusyoki'
         ];
         Word::create($param); 
         $param = [
             'word' => '離乳食中期',
-            'pronunciation' => 'rinyuusyokutyuuki'
+            'letter' => 'rinyuusyokutyuuki'
         ];
         Word::create($param); 
         $param = [
             'word' => '離乳食後期',
-            'pronunciation' => 'rinyuusyokukouki'
+            'letter' => 'rinyuusyokukouki'
         ];
         Word::create($param); 
         $param = [
             'word' => '離乳食完了期',
-            'pronunciation' => 'rinyuusyokukannryouki'
+            'letter' => 'rinyuusyokukannryouki'
         ];
         Word::create($param); 
         $param = [
             'word' => 'りんご病',
-            'pronunciation' => 'rinngobyou'
+            'letter' => 'rinngobyou'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ルソー',
-            'pronunciation' => 'ruso-'
+            'letter' => 'ruso-'
         ];
         Word::create($param); 
         $param = [
             'word' => 'レッジョエミリア',
-            'pronunciation' => 'rejjoemiria'
+            'letter' => 'rejjoemiria'
         ];
         Word::create($param); 
         $param = [
             'word' => 'レディネス',
-            'pronunciation' => 'redhinesu'
+            'letter' => 'redhinesu'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ロンパース',
-            'pronunciation' => 'ronnpa-su'
+            'letter' => 'ronnpa-su'
         ];
         Word::create($param); 
         $param = [
             'word' => 'わらべ歌',
-            'pronunciation' => 'warabeuta'
+            'letter' => 'warabeuta'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ワークライフバランス',
-            'pronunciation' => 'wa-kuraifubarannsu'
+            'letter' => 'wa-kuraifubarannsu'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ワクチン',
-            'pronunciation' => 'wakutinn'
+            'letter' => 'wakutinn'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ワセリン',
-            'pronunciation' => 'waserinn'
+            'letter' => 'waserinn'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ワンオペ',
-            'pronunciation' => 'wannope'
+            'letter' => 'wannope'
         ];
         Word::create($param); 
         $param = [
             'word' => '37.5℃',
-            'pronunciation' => '37.5do'
+            'letter' => '37.5do'
         ];
         Word::create($param); 
         $param = [
             'word' => '４種混合',
-            'pronunciation' => 'yonnsyukonngou'
+            'letter' => 'yonnsyukonngou'
         ];
         Word::create($param); 
         $param = [
             'word' => 'AED',
-            'pronunciation' => 'AED'
+            'letter' => 'AED'
         ];
         Word::create($param); 
         $param = [
             'word' => 'BCG',
-            'pronunciation' => 'BCG'
+            'letter' => 'BCG'
         ];
         Word::create($param); 
         $param = [
             'word' => 'Hibワクチン',
-            'pronunciation' => 'Hibwakutinn'
+            'letter' => 'Hibwakutinn'
         ];
         Word::create($param); 
         $param = [
             'word' => 'ICT',
-            'pronunciation' => 'ICT'
+            'letter' => 'ICT'
         ];
         Word::create($param); 
         $param = [
             'word' => 'SIDSチェック',
-            'pronunciation' => 'SIDStyekku'
+            'letter' => 'SIDStyekku'
         ];
         Word::create($param); 
         $param = [
             'word' => 'STEAM教育',
-            'pronunciation' => 'STEAMkyouiku'
+            'letter' => 'STEAMkyouiku'
         ];
         Word::create($param); 
     }

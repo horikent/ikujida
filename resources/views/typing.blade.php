@@ -9,17 +9,15 @@
   <title>育児打</title>
 </head>
 <body>
-  <div id="ajaxreload">
-    <div class="typing__container">
-      <p id="count" class="count">60</p>
-      <div id="wrap" class="wrap">
+  <div class="typing__container">
+    <p id="count">60</p>
+    <div id="wrap" class="wrap">
+      <div id="ajaxreload">
         <p>{{$words->word}}</p>
-        <span id="typed" class="typed"></span><span id="untyped" class="untyped">{{$words->pronunciation}}</span>
-      </div>
-        <script src="/js/typing.js"></script>
-        <script type="text/javascript" src="/js/typing.js?ver=1.0"></script>
+          <span id="typed"></span><span id="untyped">{{$words->letter}}</span>
       </div>
     </div>
   </div>
+  <script  src="/js/typing.js?ver=1.0"></script>
 </body>
 </html>

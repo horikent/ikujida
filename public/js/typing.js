@@ -14,34 +14,11 @@ const typeSound = new Audio("./audio/typing-sound.mp3");
 const wrongSound = new Audio("./audio/wrong.mp3");
 const correctSound = new Audio("./audio/correct.mp3");
 
-// 複数のテキストを格納する配列
-// const textList = [
-//   'Hello World','This is my App','How are you?',
-//   'Today is sunny','I love JavaScript!','Good morning',
-//   'I am Japanese','Let it be','Samurai',
-//   'Typing Game','Information Technology',
-//   'I want to be a programmer','What day is today?',
-//   'I want to build a web app','Nice to meet you',
-//   'Chrome Firefox Edge Safari','machine learning',
-//   'Brendan Eich','John Resig','React Vue Angular',
-//   'Netscape Communications','undefined null NaN',
-//   'Thank you very much','Google Apple Facebook Amazon',
-//   'ECMAScript','console.log','for while if switch',
-//   'var let const','Windows Mac Linux iOS Android',
-//   'programming'
-// ];
-
-// ランダムなテキストを表示
-const createText = () => {
+// untypedfieldのHTML要素をuntypedにセット
+const setText = () => {
     // 正タイプした文字列をクリア
     typed = "";
     typedfield.textContent = typed;
-
-    // // 配列のインデックス数からランダムな数値を生成する
-    //   let random = Math.floor(Math.random() * textList.length);
-
-    // 配列からランダムにテキストを取得し画面に表示する
-    // untyped = textList;
     untyped = untypedfield.innerHTML;
 };
 
@@ -52,6 +29,7 @@ const keyPress = (e) => {
 
     // 誤タイプの場合
     if (e.key !== untyped.substring(0, 1)) {
+        // console.log("wrong")
         wrap.classList.add("mistyped");
         //  100ms後に背景色を元に戻す
         setTimeout(() => {
@@ -71,48 +49,46 @@ const keyPress = (e) => {
     typedfield.textContent = typed;
     untypedfield.textContent = untyped;
 
-    // テキストがなくなったら新しいテキストを表示
-
-      // ページの一部だけをreloadする方法
-      // Ajaxを使う方法
-      // XMLHttpRequestを使ってAjaxで更新
-
-    let url ='/typing';
-
-    function ajaxUpdate(url, wrap) {
-    
-      // urlを加工し、キャッシュされないurlにする。
-      url = url + '?ver=' + new Date().getTime();
-  
-      // ajaxオブジェクト生成
-      var ajax = new XMLHttpRequest;
-  
-      // ajax通信open
-      ajax.open('GET', url, true);
-  
-      // ajax返信時の処理
-      ajax.onload = function () {
-  
-          // ajax返信から得たHTMLでDOM要素を更新
-          element.innerHTML = ajax.responseText;
-      };
-  
-      // ajax開始
-      ajax.send(null);
-  }
-    window.addEventListener('load', function () {
-  
-      var url = "ajax.html";
-      var div = document.getElementById('ajaxreload');
-
-      if (untyped === "") {
+    if (untyped === "") {
         correctSound.play();
         correctSound.currentTime = 0;
+        // テキストがなくなったら新しいテキストを表示
+        var url = "/ajax";
+        var div = document.getElementById("ajaxreload");
         ajaxUpdate(url, div);
+        // ここで新たにtypedとuntypedに設定し直したいが機能しておらず
+        setText();
     }
-  
-  });
 };
+
+// ページの一部だけをreloadする方法
+// Ajaxを使う方法
+// XMLHttpRequestを使ってAjaxで更新
+function ajaxUpdate(url, element) {
+    // urlを加工し、キャッシュされないurlにする。
+    url = url + "?ver=" + new Date().getTime();
+    // ajaxオブジェクト生成
+    var ajax = new XMLHttpRequest();
+    // ajax通信open
+    ajax.open("GET", url, true);
+    // ajax返信時の処理
+    ajax.onload = function () {
+        // ajax返信から得たHTMLでDOM要素を更新
+        element.innerHTML = ajax.responseText;
+    };
+    // ajax開始
+    ajax.send(null);
+}
+
+// ゲームスタート時の処理
+document.addEventListener("DOMContentLoaded", () => {
+    // カウントダウンタイマーを開始する
+    timer();
+    // 用語をuntypedにセット
+    setText();
+    // キーボードのイベント処理
+    document.addEventListener("keypress", keyPress);
+});
 
 // タイピングスキルのランクを判定
 const rankCheck = (score) => {
@@ -143,9 +119,7 @@ const rankCheck = (score) => {
 // ゲームを終了
 const gameOver = (id) => {
     clearInterval(id);
-
     const result = confirm(rankCheck(score));
-
     // OKボタンをクリックされたらリロードする
     if (result == true) {
         window.location.reload();
@@ -156,32 +130,13 @@ const gameOver = (id) => {
 const timer = () => {
     // タイマー部分のHTML要素(p要素)を取得する
     let time = count.textContent;
-
     const id = setInterval(() => {
         // カウントダウンする
         time--;
         count.textContent = time;
-
         // カウントが0になったらタイマーを停止する
         if (time <= 0) {
             gameOver(id);
         }
     }, 1000);
 };
-
-// ゲームスタート時の処理
-document.addEventListener("DOMContentLoaded", () => {
-    // カウントダウンタイマーを開始する
-    timer();
-
-    // ランダムなテキストを表示する
-    createText();
-
-    // 「スタート」ボタンを非表示にする
-    // start.style.display = 'none';
-
-    // キーボードのイベント処理
-    document.addEventListener("keypress", keyPress);
-});
-
-// untypedfield.textContent = 'スタートボタンで開始';
