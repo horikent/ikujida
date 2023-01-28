@@ -4,8 +4,9 @@ let typed = "";
 let score = 0;
 
 // 必要なHTML要素の取得
-const typedfield = document.getElementById("typed");
-const untypedfield = document.getElementById("untyped");
+let typedfield = document.getElementById("typed");
+let untypedfield = document.getElementById("untyped");
+
 const wrap = document.getElementById("wrap");
 const start = document.getElementById("start");
 const count = document.getElementById("count");
@@ -14,12 +15,13 @@ const typeSound = new Audio("./audio/typing-sound.mp3");
 const wrongSound = new Audio("./audio/wrong.mp3");
 const correctSound = new Audio("./audio/correct.mp3");
 
+
 // untypedfieldのHTML要素をuntypedにセット
 const setText = () => {
     // 正タイプした文字列をクリア
     typed = "";
     typedfield.textContent = typed;
-    untyped = untypedfield.innerHTML;
+    untyped = untypedfield.textContent;
 };
 
 // キー入力の判定
@@ -56,13 +58,11 @@ const keyPress = (e) => {
         var url = "/ajax";
         var div = document.getElementById("ajaxreload");
         ajaxUpdate(url, div);
-        // ここで新たにtypedとuntypedに設定し直したいが機能しておらず
-        setText();
     }
 };
 
-// ページの一部だけをreloadする方法
-// Ajaxを使う方法
+
+// Ajaxを使いページの一部だけをreloadする方法
 // XMLHttpRequestを使ってAjaxで更新
 function ajaxUpdate(url, element) {
     // urlを加工し、キャッシュされないurlにする。
@@ -75,11 +75,78 @@ function ajaxUpdate(url, element) {
     ajax.onload = function () {
         // ajax返信から得たHTMLでDOM要素を更新
         element.innerHTML = ajax.responseText;
+        setTextAjax();
     };
     // ajax開始
     ajax.send(null);
 }
 
+// let ajaxUpdate = document.getElementsByClassName("ajax-update");
+document.addEventListener("keypress", () => {
+    $.ajax({
+        type: "GET",
+        url: "/ajax",
+        data: {
+            typed: typed,
+            untyped: untyped
+            },
+        success: function(data) {
+            typedfieldAjax.textContent = typed;
+            untypedfieldAjax.textContent = untyped;
+            }
+    });
+    
+    typeSound.play();
+    typeSound.currentTime = 0;
+
+
+    // 誤タイプの場合
+    if (e.key !== untyped.substring(0, 1)) {
+        // console.log("wrong")
+        wrap.classList.add("mistyped");
+        //  100ms後に背景色を元に戻す
+        setTimeout(() => {
+            wrap.classList.remove("mistyped");
+        }, 100);
+        wrongSound.volume = 0.3;
+        wrongSound.play();
+        wrongSound.currentTime = 0;
+        return;
+    }
+
+    // 正タイプの場合
+    // スコアのインクリメント
+    score++;
+    typed += untyped.substring(0, 1);
+    untyped = untyped.substring(1);
+    typedfieldAjax.textContent = typed;
+    untypedfieldAjax.textContent = untyped;
+
+    if (untyped === "") {
+        correctSound.play();
+        correctSound.currentTime = 0;
+        // テキストがなくなったら新しいテキストを表示
+        var url = "/ajax";
+        var div = document.getElementById("ajaxreload");
+        ajaxUpdate(url, div);
+        }
+});
+
+
+// ajaxで取得したデータのHTML要素をuntypedにセット
+const setTextAjax = () => {
+    // typedとuntypedをクリア
+    typed = "";
+    untyped = "";
+    // ajaxから取得したtypedAjaxとuntypedAjaxからHTML要素を取得
+    let typedfieldAjax = document.getElementById("typedAjax");
+    let untypedfieldAjax = document.getElementById("untypedAjax");
+    // 取得した要素をtypedとuntypedにセット
+    typedfieldAjax.textContent = typed;
+    untyped = untypedfieldAjax.textContent;
+};
+
+        
 // ゲームスタート時の処理
 document.addEventListener("DOMContentLoaded", () => {
     // カウントダウンタイマーを開始する
@@ -89,6 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // キーボードのイベント処理
     document.addEventListener("keypress", keyPress);
 });
+
 
 // タイピングスキルのランクを判定
 const rankCheck = (score) => {
@@ -116,6 +184,7 @@ const rankCheck = (score) => {
     return `${score}文字打てました!\n${text}\n【OK】リトライ / 【キャンセル】終了`;
 };
 
+
 // ゲームを終了
 const gameOver = (id) => {
     clearInterval(id);
@@ -125,6 +194,7 @@ const gameOver = (id) => {
         window.location.reload();
     }
 };
+
 
 // カウントダウンタイマー
 const timer = () => {

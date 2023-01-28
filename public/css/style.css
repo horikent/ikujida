@@ -40,6 +40,22 @@ body{
   color:lightgreen;
 }
 
+#typedAjax{
+  color:lightgreen;
+}
+
+/* 確認用
+#typedfieldAjax{
+  color:lightgreen;
+} 
+*/
+
+/* 確認用
+.ajax-update{
+  color:lightgreen;
+} */
+
+
 .mistyped{
   background-color:red;
 }
