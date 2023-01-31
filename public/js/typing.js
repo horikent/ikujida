@@ -1,3 +1,4 @@
+
 // 変数の初期化
 let untyped = "";
 let typed = "";
@@ -14,6 +15,7 @@ const count = document.getElementById("count");
 const typeSound = new Audio("./audio/typing-sound.mp3");
 const wrongSound = new Audio("./audio/wrong.mp3");
 const correctSound = new Audio("./audio/correct.mp3");
+
 
 
 // untypedfieldのHTML要素をuntypedにセット
@@ -139,14 +141,14 @@ const setTextAjax = () => {
     typed = "";
     untyped = "";
     // ajaxから取得したtypedAjaxとuntypedAjaxからHTML要素を取得
-    let typedfieldAjax = document.getElementById("typedAjax");
-    let untypedfieldAjax = document.getElementById("untypedAjax");
+    typedfieldAjax = document.getElementById("typedAjax");
+    untypedfieldAjax = document.getElementById("untypedAjax");        
     // 取得した要素をtypedとuntypedにセット
     typedfieldAjax.textContent = typed;
     untyped = untypedfieldAjax.textContent;
 };
 
-        
+
 // ゲームスタート時の処理
 document.addEventListener("DOMContentLoaded", () => {
     // カウントダウンタイマーを開始する
@@ -156,6 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // キーボードのイベント処理
     document.addEventListener("keypress", keyPress);
 });
+
 
 
 // タイピングスキルのランクを判定

@@ -4,6 +4,16 @@
   font-size: 5em;
   margin-top:30%;
 }
+
+.title{
+  position: absolute;
+  top:10%;
+  left:40%;
+  font-family: 'Yusei Magic', sans-serif;;
+  font-size: 1em;
+  letter-spacing: 20px;
+}
+
 .start{
   text-decoration: none;
   font-family:'Courier New', monospace;
@@ -14,7 +24,6 @@
 body{
   text-align: center;
 }
-
 .typing__container{
   font-size:5em;
 }
@@ -31,7 +40,9 @@ body{
   margin-top:20px;
   padding:40px 40px;
   font-weight: bold;
-  background-color:#666;
+  border-radius: 300px;
+  background-color:rgb(51, 2, 2);
+  /* background-image: url("/img/kid-moon.png"); */
   color:#fff;
   font-family:'Courier New', monospace;
 }
@@ -43,18 +54,6 @@ body{
 #typedAjax{
   color:lightgreen;
 }
-
-/* 確認用
-#typedfieldAjax{
-  color:lightgreen;
-} 
-*/
-
-/* 確認用
-.ajax-update{
-  color:lightgreen;
-} */
-
 
 .mistyped{
   background-color:red;
