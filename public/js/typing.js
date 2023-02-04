@@ -29,18 +29,18 @@ const setText = () => {
 // キー入力の判定
 const keyPress = (e) => {
     if(setTextAjax){
-    $.ajax({
-        type: "GET",
-        url: "/ajax",
-        data: {
-            typed: typed,
-            untyped: untyped
-            },
-        success: function(data) {
-            typedfieldAjax.textContent = typed;
-            untypedfieldAjax.textContent = untyped;
-            }
-    });
+        $.ajax({
+            type: "GET",
+            url: "/ajax",
+            data: {
+                typed: typed,
+                untyped: untyped
+                },
+            success: function(data) {
+                typedfieldAjax.textContent = typed;
+                untypedfieldAjax.textContent = untyped;
+                }
+        });
     }
 
     typeSound.play();
