@@ -28,6 +28,21 @@ const setText = () => {
 
 // キー入力の判定
 const keyPress = (e) => {
+    if(setTextAjax){
+    $.ajax({
+        type: "GET",
+        url: "/ajax",
+        data: {
+            typed: typed,
+            untyped: untyped
+            },
+        success: function(data) {
+            typedfieldAjax.textContent = typed;
+            untypedfieldAjax.textContent = untyped;
+            }
+    });
+    }
+
     typeSound.play();
     typeSound.currentTime = 0;
 
@@ -82,58 +97,6 @@ function ajaxUpdate(url, element) {
     // ajax開始
     ajax.send(null);
 }
-
-// let ajaxUpdate = document.getElementsByClassName("ajax-update");
-document.addEventListener("keypress", () => {
-    $.ajax({
-        type: "GET",
-        url: "/ajax",
-        data: {
-            typed: typed,
-            untyped: untyped
-            },
-        success: function(data) {
-            typedfieldAjax.textContent = typed;
-            untypedfieldAjax.textContent = untyped;
-            }
-    });
-    
-    typeSound.play();
-    typeSound.currentTime = 0;
-
-
-    // 誤タイプの場合
-    if (e.key !== untyped.substring(0, 1)) {
-        // console.log("wrong")
-        wrap.classList.add("mistyped");
-        //  100ms後に背景色を元に戻す
-        setTimeout(() => {
-            wrap.classList.remove("mistyped");
-        }, 100);
-        wrongSound.volume = 0.3;
-        wrongSound.play();
-        wrongSound.currentTime = 0;
-        return;
-    }
-
-    // 正タイプの場合
-    // スコアのインクリメント
-    score++;
-    typed += untyped.substring(0, 1);
-    untyped = untyped.substring(1);
-    typedfieldAjax.textContent = typed;
-    untypedfieldAjax.textContent = untyped;
-
-    if (untyped === "") {
-        correctSound.play();
-        correctSound.currentTime = 0;
-        // テキストがなくなったら新しいテキストを表示
-        var url = "/ajax";
-        var div = document.getElementById("ajaxreload");
-        ajaxUpdate(url, div);
-        }
-});
-
 
 // ajaxで取得したデータのHTML要素をuntypedにセット
 const setTextAjax = () => {
@@ -213,3 +176,5 @@ const timer = () => {
         }
     }, 1000);
 };
+
+
