@@ -28,7 +28,7 @@ const setText = () => {
 
 // キー入力の判定
 const keyPress = (e) => {
-    if(setTextAjax){
+    if('setTextAjax'){
         $.ajax({
             type: "GET",
             url: "/ajax",

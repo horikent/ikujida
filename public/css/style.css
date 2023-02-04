@@ -9,7 +9,7 @@
   position: absolute;
   top:10%;
   left:40%;
-  font-family: 'Yusei Magic', sans-serif;;
+  font-family: 'Yusei Magic', sans-serif;
   font-size: 1em;
   letter-spacing: 20px;
 }
@@ -23,33 +23,49 @@
 
 body{
   text-align: center;
+  /* background: linear-gradient(to top, rgb(66, 20, 11), rgb(255, 255, 255)); */
+  height:100vh;
 }
+
+
 .typing__container{
   font-size:5em;
 }
 
-
 #count{
-  margin:0;
+  width:10%;
+  margin:20px auto 80px;
   font-weight: bold;
-  color:#888;
+  font-size:4rem ;
+  color:rgb(0, 54, 13);
+  /* text-decoration: underline dotted #8e0e09; */
+  background:rgb(253, 253, 253);
+  box-shadow:8px 8px 5px rgb(40, 40, 40) ;
+  border-radius: 100px;
+  border:10px solid rgb(84, 1, 1);
 }
 
 .wrap{
-  font-size:0.8em;
-  margin-top:20px;
-  padding:40px 40px;
+  margin:0 auto;
+  font-size:4.5rem;
+  margin-top:-50px;
+  padding:50px 40px 90px;
   font-weight: bold;
-  letter-spacing: 3px;
-  border-radius: 300px;
-  background-color:rgb(51, 2, 2);
-  /* background-image: url("/img/kid-moon.png"); */
-  color:#fff;
-  font-family:'Courier New', monospace;
+  letter-spacing: 5px;
+  overflow-wrap:break-word;
+  border-radius: 20px 20px 5px 5px;
+  box-shadow:8px 8px 5px rgb(40, 40, 40) ;
+  border-bottom:1rem solid rgb(96, 51, 2);
+  width:65%;
+  background-color:rgb(0, 54, 13);
+  color:rgb(220, 217, 217);
+  /* font-family: 'Yusei Magic','Yusei Magic', sans-serif; */
+  /* font-family:'Courier New', monospace; */
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 #typed{
-  color:lightgreen;
+  color:rgb(138, 246, 138);
 }
 
 #typedAjax{
@@ -59,93 +75,6 @@ body{
 .mistyped{
   background-color:red;
 }
-
-
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Zen+Antique&display=swap"); */
-
-/* *{
-  box-sizing: border-box;
-} */
-/* body{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgb(2, 205, 16);
-  font-family: "Poppins", sans-serif;
-}
-
-
-
-.typing__container{
-  letter-spacing:.1em;
-  background-color: rgb(250, 250, 250);
-  font-size: 2.7rem;
-  font-weight: 600;
-  padding: 4rem;
-  border-radius: 10rem;
-  width:1000px;
-  min-height: 300px;
-  max-width: 90%;
-  box-shadow: 1px 5px 6px rgb(80, 80, 80);
-}
-
-.type-Input{
-  margin-top: 4rem;
-}
-
-.timer {
-  font-family:'Courier New', monospace;
-  letter-spacing:.1em;
-  text-align: center;
-  position: absolute;
-  top: .5rem;
-  font-size: 5rem;
-  font-weight: bold;
-  color:rgb(226, 255, 4)
-}
-
-.type-display{
-  text-align: center;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-}
-
-.type-Input{
-  background: transparent;
-  border: 2px solid rgb(158, 52, 52);
-  outline: none;
-  width: 100%;
-  height: 8rem;
-  margin: auto;
-  resize:none;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  font-size: 2rem;
-}
-
-.type-Input:focus{
-  border-color: black;
-}
-
-.correct {
-  color:green;
-}
-
-.incorrect {
-  color:red;
-  text-decoration: underline;
-}
-
-#muteBtn{
-  cursor: pointer;
-}
-
-.info{
-  font-size:14px;
-  font-weight: lighter;
-  text-align: center;
-} */
 
 /* admin */
 .container{
