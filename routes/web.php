@@ -16,7 +16,6 @@ use App\Http\Controllers\WordController;
 */
 Route::get('/', [WordController::class, 'index']);
 Route::get('/ajax', [WordController::class, 'ajax']);
-// Route::get('/frametarget', [WordController::class, 'frametarget']);
 Route::get('/typing', [WordController::class, 'typing']);
 Route::get('/admin', [WordController::class, 'admin']);
 Route::post('/add', [WordController::class, 'create']);

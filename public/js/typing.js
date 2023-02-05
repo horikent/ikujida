@@ -28,7 +28,7 @@ const setText = () => {
 
 // キー入力の判定
 const keyPress = (e) => {
-    if('setTextAjax'){
+    // if(setTextAjax()){
         $.ajax({
             type: "GET",
             url: "/ajax",
@@ -37,11 +37,16 @@ const keyPress = (e) => {
                 untyped: untyped
                 },
             success: function(data) {
+                let parser = new DOMParser();
+                let doc = parser.parseFromString(data, "text/html");
+                var typedfieldAjax = document.getElementById("typedAjax");  
+                var untypedfieldAjax = document.getElementById("untypedAjax");   
+                console.log(untypedAjax)
                 typedfieldAjax.textContent = typed;
                 untypedfieldAjax.textContent = untyped;
                 }
         });
-    }
+    // }
 
     typeSound.play();
     typeSound.currentTime = 0;
@@ -67,6 +72,7 @@ const keyPress = (e) => {
     untyped = untyped.substring(1);
     typedfield.textContent = typed;
     untypedfield.textContent = untyped;
+    
 
     if (untyped === "") {
         correctSound.play();

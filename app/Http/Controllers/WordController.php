@@ -31,14 +31,6 @@ class WordController extends Controller
     return view('/ajax', $param);
     }
 
-    public function frametarget(Request $request)
-    {
-    $words=Word::inRandomOrder()->first();
-    $param=[
-        'words'=>$words
-    ];
-    return view('/typing', $param);
-    }
 
     public function search(Request $request){
 
