@@ -12,7 +12,7 @@
 
   <title>育児打</title>
 </head>
-<body class="index__body">
+<body class="index__body" style="background: url(/img/kid-moon.png);">
   <div class="index__container">
     <h1 class="title">育児打</h1>
     <a href="/typing" class="start" id="start">Click to Start</a>
