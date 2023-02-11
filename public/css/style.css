@@ -1,4 +1,15 @@
+
+body{
+  text-align: center;
+  /* background: linear-gradient(to top, rgb(66, 20, 11), rgb(255, 255, 255)); */
+  height:auto;
+}
+
 /* index */
+.index__body{
+  background: url(/img/kid-moon.png);
+  background-size:auto;
+}
 
 .index__container{
   font-size: 5em;
@@ -6,26 +17,24 @@
 }
 
 .title{
-  position: absolute;
+  position: relative;
   top:10%;
-  left:40%;
+  margin:0 auto;
   font-family: 'Yusei Magic', sans-serif;
   font-size: 1em;
   letter-spacing: 20px;
 }
 
 .start{
+  /* position:relative; */
+  /* top:20%; */
   text-decoration: none;
   font-family:'Courier New', monospace;
   color:cadetblue;
   cursor: pointer;
 }
 
-body{
-  text-align: center;
-  /* background: linear-gradient(to top, rgb(66, 20, 11), rgb(255, 255, 255)); */
-  height:100vh;
-}
+
 
 
 .typing__container{
