@@ -38,8 +38,7 @@ const keyPress = (e) => {
                 },
             success: function(data) {
                 let parser = new DOMParser();
-                let doc = parser.parseFromString(data, "text/html");
-                var typedfieldAjax = document.getElementById("typedAjax");  
+                let doc = parser.parseFromString(data, "text/html"); 
                 var untypedfieldAjax = document.getElementById("untypedAjax");   
                 console.log(untypedAjax)
                 typedfieldAjax.textContent = typed;

@@ -33,16 +33,16 @@ body{
 }
 
 #count{
-  width:10%;
+  width:90px;
   margin:20px auto 80px;
   font-weight: bold;
-  font-size:4rem ;
+  font-size:3.3rem ;
   color:rgb(0, 54, 13);
   /* text-decoration: underline dotted #8e0e09; */
-  background:rgb(253, 253, 253);
-  box-shadow:8px 8px 5px rgb(40, 40, 40) ;
+  background:rgb(255, 255, 255);
+  box-shadow:15px 15px 10px rgb(40, 40, 40) ;
   border-radius: 100px;
-  border:10px solid rgb(84, 1, 1);
+  border:10px solid rgb(96, 51, 2);
 }
 
 .wrap{
@@ -54,7 +54,7 @@ body{
   letter-spacing: 5px;
   overflow-wrap:break-word;
   border-radius: 20px 20px 5px 5px;
-  box-shadow:8px 8px 5px rgb(40, 40, 40) ;
+  box-shadow:10px 10px 10px rgb(40, 40, 40) ;
   border-bottom:1rem solid rgb(96, 51, 2);
   width:65%;
   background-color:rgb(0, 54, 13);
