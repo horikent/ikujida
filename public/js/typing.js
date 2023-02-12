@@ -29,7 +29,6 @@ const setText = () => {
 
 // キー入力の判定
 const keyPress = (e) => {
-    // if(setTextAjax()){
         $.ajax({
             type: "GET",
             url: "/ajax",
@@ -42,19 +41,17 @@ const keyPress = (e) => {
                 let doc = parser.parseFromString(data, "text/html"); 
                 var typedfieldAjax = doc.getElementById("typedAjax");   
                 var untypedfieldAjax = doc.getElementById("untypedAjax");   
-                console.log(untypedAjax)
+                console.log(untypedfieldAjax)
                 typedfieldAjax.textContent = typed;
                 untypedfieldAjax.textContent = untyped;
                 }
         });
-    // }
 
     typeSound.play();
     typeSound.currentTime = 0;
 
     // 誤タイプの場合
     if (e.key !== untyped.substring(0, 1)) {
-        // console.log("wrong")
         wrap.classList.add("mistyped");
         //  100ms後に背景色を元に戻す
         setTimeout(() => {
@@ -64,7 +61,6 @@ const keyPress = (e) => {
         wrongSound.play();
         wrongSound.currentTime = 0;
         wrong++;
-        // console.log(wrong);
         return;
     }
 
@@ -73,9 +69,13 @@ const keyPress = (e) => {
     score++;
     typed += untyped.substring(0, 1);
     untyped = untyped.substring(1);
-    typedfield.textContent = typed;
-    untypedfield.textContent = untyped;
-    
+    if(untypedfield != ""){
+        typedfield.textContent = typed;
+        untypedfield.textContent = untyped;
+    }else{
+        typedfieldAjax.textContent = typed;
+        untypedfieldAjax.textContent = untyped; 
+    }
 
     if (untyped === "") {
         correctSound.play();

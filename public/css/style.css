@@ -77,7 +77,10 @@ body{
 }
 
 #typedAjax{
-  color:lightgreen;
+  color:rgb(138, 246, 138);
+}
+#typedfieldAjax{
+  color:rgb(138, 246, 138);
 }
 
 .mistyped{
