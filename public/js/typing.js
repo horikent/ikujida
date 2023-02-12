@@ -40,8 +40,9 @@ const keyPress = (e) => {
             success: function(data) {
                 let parser = new DOMParser();
                 let doc = parser.parseFromString(data, "text/html"); 
-                var untypedfieldAjax = document.getElementById("untypedAjax");   
-                // console.log(untypedAjax)
+                var typedfieldAjax = doc.getElementById("typedAjax");   
+                var untypedfieldAjax = doc.getElementById("untypedAjax");   
+                console.log(untypedAjax)
                 typedfieldAjax.textContent = typed;
                 untypedfieldAjax.textContent = untyped;
                 }
@@ -63,14 +64,13 @@ const keyPress = (e) => {
         wrongSound.play();
         wrongSound.currentTime = 0;
         wrong++;
-        console.log(wrong);
+        // console.log(wrong);
         return;
     }
 
     // 正タイプの場合
     // スコアのインクリメント
     score++;
-    console.log(score);
     typed += untyped.substring(0, 1);
     untyped = untyped.substring(1);
     typedfield.textContent = typed;
@@ -194,21 +194,6 @@ const rankCheck = (score) => {
     } else if (score * 11 / 365 >= 13) {
         text = `お子さんが中学生になりました。\nご入学おめでとうございます!`;
     }
-    // if (score < 100) {
-    //     text = `あなたのランクはCです。 \nBランクまであと${
-    //         100 - score
-    //     }文字です。`;
-    // } else if (score < 200) {
-    //     text = `あなたのランクはBです。 \nAランクまであと${
-    //         200 - score
-    //     }文字です。`;
-    // } else if (score < 300) {
-    //     text = `あなたのランクはAです。 \nSランクまであと${
-    //         300 - score
-    //     }文字です。`;
-    // } else if (score >= 300) {
-    //     text = `あなたのランクはSです。\nおめでとうございます!`;
-    // }
 
     // 生成したメッセージと一緒に文字列を返す
     return `${text}\n正答率は${(Math.floor(score/(score+wrong)*100))}%でした\n【OK】もう一度 / 【キャンセル】やめる`;
