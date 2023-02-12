@@ -1813,7 +1813,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param); 
         $param = [
             'word' => '目と手の協応',
-            'letter' => 'metotennnokyouou'
+            'letter' => 'metotenokyouou'
         ];
         Word::create($param); 
         $param = [

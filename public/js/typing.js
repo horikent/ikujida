@@ -3,6 +3,7 @@
 let untyped = "";
 let typed = "";
 let score = 0;
+let wrong = 0;
 
 // 必要なHTML要素の取得
 let typedfield = document.getElementById("typed");
@@ -40,7 +41,7 @@ const keyPress = (e) => {
                 let parser = new DOMParser();
                 let doc = parser.parseFromString(data, "text/html"); 
                 var untypedfieldAjax = document.getElementById("untypedAjax");   
-                console.log(untypedAjax)
+                // console.log(untypedAjax)
                 typedfieldAjax.textContent = typed;
                 untypedfieldAjax.textContent = untyped;
                 }
@@ -61,12 +62,15 @@ const keyPress = (e) => {
         wrongSound.volume = 0.3;
         wrongSound.play();
         wrongSound.currentTime = 0;
+        wrong++;
+        console.log(wrong);
         return;
     }
 
     // 正タイプの場合
     // スコアのインクリメント
     score++;
+    console.log(score);
     typed += untyped.substring(0, 1);
     untyped = untyped.substring(1);
     typedfield.textContent = typed;
@@ -207,7 +211,7 @@ const rankCheck = (score) => {
     // }
 
     // 生成したメッセージと一緒に文字列を返す
-    return `${text}\n【OK】もう一度 / 【キャンセル】やめる`;
+    return `${text}\n正答率は${(Math.floor(score/(score+wrong)*100))}%でした\n【OK】もう一度 / 【キャンセル】やめる`;
     // ${score}文字打てました!\n
 };
 
