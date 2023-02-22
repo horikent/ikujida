@@ -41,10 +41,6 @@ const keyPress = (e) => {
                 let doc = parser.parseFromString(data, "text/html");
                 var typedfield = doc.getElementById("typed");   
                 var untypedfield= doc.getElementById("untyped");   
- 
-                // var typedfieldAjax = document.getElementById("typedAjax");   
-                // var untypedfieldAjax = document.getElementById("untypedAjax");   
-                // console.log(untypedfieldAjax)
                 typedfield.textContent = typed;
                 untypedfield.textContent = untyped;
                 }
@@ -72,13 +68,8 @@ const keyPress = (e) => {
     score++;
     typed += untyped.substring(0, 1);
     untyped = untyped.substring(1);
-    // if(untypedfield != ""){
-        typedfield.textContent = typed;
-        untypedfield.textContent = untyped;
-    // }else{
-        // typedfieldAjax.textContent = typed;
-        // untypedfieldAjax.textContent = untyped; 
-    // }
+    typedfield.textContent = typed;
+    untypedfield.textContent = untyped;
 
     if (untyped === "") {
         correctSound.play();
@@ -119,13 +110,9 @@ const setTextAjax = () => {
     // ajaxから取得したtypedAjaxとuntypedAjaxからHTML要素を取得
     typedfield = document.getElementById("typed");
     untypedfield = document.getElementById("untyped");   
-    // typedfieldAjax = document.getElementById("typedAjax");
-    // untypedfieldAjax = document.getElementById("untypedAjax");        
     // 取得した要素をtypedとuntypedにセット
     typedfield.textContent = typed;
     untyped = untypedfield.textContent;
-    // typedfieldAjax.textContent = typed;
-    // untyped = untypedfieldAjax.textContent;
 };
 
 
