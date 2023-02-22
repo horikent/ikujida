@@ -38,12 +38,15 @@ const keyPress = (e) => {
                 },
             success: function(data) {
                 let parser = new DOMParser();
-                let doc = parser.parseFromString(data, "text/html"); 
-                var typedfieldAjax = doc.getElementById("typedAjax");   
-                var untypedfieldAjax = doc.getElementById("untypedAjax");   
-                console.log(untypedfieldAjax)
-                typedfieldAjax.textContent = typed;
-                untypedfieldAjax.textContent = untyped;
+                let doc = parser.parseFromString(data, "text/html");
+                var typedfield = doc.getElementById("typed");   
+                var untypedfield= doc.getElementById("untyped");   
+ 
+                // var typedfieldAjax = document.getElementById("typedAjax");   
+                // var untypedfieldAjax = document.getElementById("untypedAjax");   
+                // console.log(untypedfieldAjax)
+                typedfield.textContent = typed;
+                untypedfield.textContent = untyped;
                 }
         });
 
@@ -69,13 +72,13 @@ const keyPress = (e) => {
     score++;
     typed += untyped.substring(0, 1);
     untyped = untyped.substring(1);
-    if(untypedfield != ""){
+    // if(untypedfield != ""){
         typedfield.textContent = typed;
         untypedfield.textContent = untyped;
-    }else{
-        typedfieldAjax.textContent = typed;
-        untypedfieldAjax.textContent = untyped; 
-    }
+    // }else{
+        // typedfieldAjax.textContent = typed;
+        // untypedfieldAjax.textContent = untyped; 
+    // }
 
     if (untyped === "") {
         correctSound.play();
@@ -101,6 +104,7 @@ function ajaxUpdate(url, element) {
     ajax.onload = function () {
         // ajax返信から得たHTMLでDOM要素を更新
         element.innerHTML = ajax.responseText;
+        // setText();
         setTextAjax();
     };
     // ajax開始
@@ -113,11 +117,15 @@ const setTextAjax = () => {
     typed = "";
     untyped = "";
     // ajaxから取得したtypedAjaxとuntypedAjaxからHTML要素を取得
-    typedfieldAjax = document.getElementById("typedAjax");
-    untypedfieldAjax = document.getElementById("untypedAjax");        
+    typedfield = document.getElementById("typed");
+    untypedfield = document.getElementById("untyped");   
+    // typedfieldAjax = document.getElementById("typedAjax");
+    // untypedfieldAjax = document.getElementById("untypedAjax");        
     // 取得した要素をtypedとuntypedにセット
-    typedfieldAjax.textContent = typed;
-    untyped = untypedfieldAjax.textContent;
+    typedfield.textContent = typed;
+    untyped = untypedfield.textContent;
+    // typedfieldAjax.textContent = typed;
+    // untyped = untypedfieldAjax.textContent;
 };
 
 
@@ -189,7 +197,7 @@ const rankCheck = (score) => {
         }文字です。`;
     } else if (score * 11 / 365 < 13) {
         text = `お子さんは12歳です。 \n13歳の誕生日まであと${
-            4745 - score * 11
+            (4745 - score * 11)/11
         }文字です。`;
     } else if (score * 11 / 365 >= 13) {
         text = `お子さんが中学生になりました。\nご入学おめでとうございます!`;

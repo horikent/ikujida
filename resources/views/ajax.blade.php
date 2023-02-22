@@ -10,7 +10,7 @@
 <body>
   <div class="ajaxReturn">
       <p>{{$words->word}}</p>
-        <span id="typedAjax" class="typedAjaxColor"></span><span id="untypedAjax" class="untyped">{{$words->letter}}</span>
+        <span id="typed" class="typed"></span><span id="untyped" class="untyped">{{$words->letter}}</span>
   </div>  
   <script src="/js/typing.js?ver=1.0"></script>
   
