@@ -1,13 +1,15 @@
-
 // 変数の初期化
 let untyped = "";
 let typed = "";
+let jpWord = "";
 let score = 0;
 let wrong = 0;
+let typedWords = [];
 
 // 必要なHTML要素の取得
 let typedfield = document.getElementById("typed");
 let untypedfield = document.getElementById("untyped");
+let jpWordfield = document.getElementById("jpWord");
 
 const wrap = document.getElementById("wrap");
 const start = document.getElementById("start");
@@ -17,7 +19,8 @@ const typeSound = new Audio("./audio/typing-sound.mp3");
 const wrongSound = new Audio("./audio/wrong.mp3");
 const correctSound = new Audio("./audio/correct.mp3");
 
-
+// Ajaxで取得した要素を格納するための変数
+let doc;
 
 // untypedfieldのHTML要素をuntypedにセット
 const setText = () => {
@@ -25,6 +28,7 @@ const setText = () => {
     typed = "";
     typedfield.textContent = typed;
     untyped = untypedfield.textContent;
+    jpWord = jpWordfield.textContent;
 };
 
 // キー入力の判定
@@ -34,15 +38,27 @@ const keyPress = (e) => {
             url: "/ajax",
             data: {
                 typed: typed,
-                untyped: untyped
+                untyped: untyped,
+                jpWord: jpWord
                 },
+            // async: false, // 追加
             success: function(data) {
                 let parser = new DOMParser();
                 let doc = parser.parseFromString(data, "text/html");
-                var typedfield = doc.getElementById("typed");   
-                var untypedfield= doc.getElementById("untyped");   
-                typedfield.textContent = typed;
-                untypedfield.textContent = untyped;
+
+                const newJpWord = doc.getElementById("jpWord").textContent;
+                if (newJpWord) {
+                  jpWord = newJpWord;
+                  jpWordfield.textContent = jpWord;
+                }
+                // var typedfield = doc.getElementById("typed");   
+                // var untypedfield= doc.getElementById("untyped");   
+                // var jpWordfield = doc.getElementById("jpWord").textContent;
+                // console.log(jpWord);
+                // typedfield.textContent = typed;
+                // untypedfield.textContent = untyped;      
+                // jpWordfield.textContent = jpWord;
+                
                 }
         });
 
@@ -74,6 +90,9 @@ const keyPress = (e) => {
     if (untyped === "") {
         correctSound.play();
         correctSound.currentTime = 0;
+        // 配列にタイプした用語を追加
+        typedWords.push(jpWord);
+        typedWords.push(typed);
         // テキストがなくなったら新しいテキストを表示
         var url = "/ajax";
         var div = document.getElementById("ajaxreload");
@@ -95,7 +114,6 @@ function ajaxUpdate(url, element) {
     ajax.onload = function () {
         // ajax返信から得たHTMLでDOM要素を更新
         element.innerHTML = ajax.responseText;
-        // setText();
         setTextAjax();
     };
     // ajax開始
@@ -107,12 +125,16 @@ const setTextAjax = () => {
     // typedとuntypedをクリア
     typed = "";
     untyped = "";
-    // ajaxから取得したtypedAjaxとuntypedAjaxからHTML要素を取得
+    jpWord = "";
+    // // ajaxから取得したtypedAjaxとuntypedAjaxからHTML要素を取得
     typedfield = document.getElementById("typed");
-    untypedfield = document.getElementById("untyped");   
-    // 取得した要素をtypedとuntypedにセット
+    untypedfield = document.getElementById("untyped");
+    jpWordfield = document.getElementById("jpWord");
+
+    // // 取得した要素をtypedとuntypedにセット
     typedfield.textContent = typed;
     untyped = untypedfield.textContent;
+    jpWordfield.textContent = jpWord;
 };
 
 
@@ -127,9 +149,39 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+const gameOver = (id) => {
+    clearInterval(id);
+    // スコアをモーダルウィンドウに表示
+    const modal = document.getElementById("modal");
+    const result = document.getElementById("result");
+    const modalText = document.getElementById("modalText");
+    result.textContent = `Score: ${score}`;
+    modalText.textContent = getAgeText(score);
+    modal.style.display = 'block';
+
+    // モーダルウィンドウの「閉じる」ボタンをクリックしたら、モーダルウィンドウを非表示にする
+    const closeBtn = document.getElementById("close");
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+    };
+
+      // OKボタンをクリックしたら、モーダルウィンドウを非表示にする
+    const reTry = document.getElementById("retry");
+    reTry.onclick = function() {
+        modal.style.display = "none";
+        restartGame(); // ゲームを再開する関数を呼び出す
+    }
+
+    // ゲームを再開する関数
+    const restartGame = () => {
+    // ゲームを再開する処理をここに記述する
+    window.location.reload();
+    }
+
 
 // タイピングスキルのランクを判定
-const rankCheck = (score) => {
+const getAgeText = (score) => {
     // テキストを格納する変数を作る
     let text = "";
 
@@ -191,19 +243,8 @@ const rankCheck = (score) => {
     }
 
     // 生成したメッセージと一緒に文字列を返す
-    return `${text}\n正答率は${(Math.floor(score/(score+wrong)*100))}%でした\n【OK】もう一度 / 【キャンセル】やめる`;
-    // ${score}文字打てました!\n
-};
+    return `${text}\n正答率は${Math.floor(score/(score+wrong)*100)}%でした。\nタイプした文字:\n${typedWords}`;
 
-
-// ゲームを終了
-const gameOver = (id) => {
-    clearInterval(id);
-    const result = confirm(rankCheck(score));
-    // OKボタンをクリックされたらリロードする
-    if (result == true) {
-        window.location.reload();
-    }
 };
 
 
@@ -221,5 +262,3 @@ const timer = () => {
         }
     }, 1000);
 };
-
-

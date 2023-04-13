@@ -27,7 +27,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param);
         $param = [
             'word' => '赤ちゃんポスト',
-            'letter' => 'akatyanpost'
+            'letter' => 'akatyanposut'
         ];
         Word::create($param);
         $param = [
@@ -52,7 +52,7 @@ class WordsTableSeeder extends Seeder
         Word::create($param);
         $param = [
             'word' => 'アタッチメント',
-            'letter' => 'atattimennt'
+            'letter' => 'atattimennto'
         ];
         Word::create($param);
         $param = [

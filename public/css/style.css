@@ -124,3 +124,66 @@ body{
 .table__word{
   width:250px;
 }
+
+/* モーダルウィンドウのスタイル */
+.modal {
+  display: none; /* 初期状態は非表示 */
+  position: fixed; /* 親要素を基準とした位置指定 */
+  z-index: 1; /* モーダルウィンドウを最前面に表示する */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* コンテンツがウィンドウより大きい場合はスクロールバーを表示 */
+  background-color: rgba(0, 0, 0, 0.4); /* 透明度のある黒 */
+}
+
+/* モーダルウィンドウの背景 */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 背景色は黒く、透明度を0.5に設定 */
+  z-index: 1;
+}
+
+/* モーダルウィンドウのコンテンツ */
+.modal-content { 
+  position: absolute;
+  top: 20%; 
+  left: 23%; 
+  width:30%;
+  max-height: 80%;
+  max-width: 60%;
+  overflow: auto;
+  background-color: #fff;
+  padding: 200px 150px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  } 
+
+/* モーダルウィンドウの上部のスタイル */
+  .modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  }
+  
+  /* モーダルウィンドウの閉じるボタンのスタイル */
+  .close {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: red;
+  cursor: pointer;
+  }

@@ -17,14 +17,24 @@
 </head>
 <body style="background: url(/img/wall3.jpg);">
   <div class="typing__container">
-    <p id="count">60</p>
+    <p id="count">7</p>
     <div id="wrap" class="wrap">
       <div id="ajaxreload">
-        <p>{{$words->word}}</p>
+        <p id="jpWord">{{$words->word}}</p>
           <span id="typed"></span><span id="untyped">{{$words->letter}}</span>
       </div>
     </div>
   </div>
+    <!-- モーダルウィンドウ -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p id="result"></p>
+      <p id="modalText"></p>
+      <button id="retry">もう一度</button>
+      <button id="close">やめる</button>
+    </div>
+  </div>
+
   <script  src="/js/typing.js?ver=1.0"></script>
 </body>
 </html>
