@@ -45,12 +45,6 @@ const keyPress = (e) => {
             success: function(data) {
                 let parser = new DOMParser();
                 let doc = parser.parseFromString(data, "text/html");
-
-                const newJpWord = doc.getElementById("jpWord").textContent;
-                if (newJpWord) {
-                  jpWord = newJpWord;
-                  jpWordfield.textContent = jpWord;
-                }
                 // var typedfield = doc.getElementById("typed");   
                 // var untypedfield= doc.getElementById("untyped");   
                 // var jpWordfield = doc.getElementById("jpWord").textContent;
@@ -86,6 +80,8 @@ const keyPress = (e) => {
     untyped = untyped.substring(1);
     typedfield.textContent = typed;
     untypedfield.textContent = untyped;
+    // jpWordfield.textContent = jpWord;
+
 
     if (untyped === "") {
         correctSound.play();
